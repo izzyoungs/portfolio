@@ -1,0 +1,167 @@
+---
+title: ""
+output:
+  html_document:
+    includes:
+      in_header: "favicon.html"
+    theme: "flatly"
+    pandoc_args: --tab-stop=2
+    toc: yes
+    toc_float: yes
+  pdf_document:
+    toc: yes
+  word_document:
+    toc: yes
+---
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato" />
+
+```{r markdown setup, include=FALSE}
+library(knitr)
+library(tidyverse)
+library(sf)
+library(magrittr)
+library(rgdal)
+library(cowplot)
+library(sf)
+library(here)
+library(tigris)
+options(tigris_use_cache = TRUE)
+options(scipen = 999)
+
+knitr::opts_chunk$set(fig.path = "")
+knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(warning = FALSE)
+```
+
+## Matching points to census tracts
+
+Researchers often have point data that they want to append census tracts to for social science research. This guide shows you how to do this using a handful of R packages. 
+
+### Step I: Libraries and setup
+
+The libraries you will need to complete this project are listed below. You will want to install and/or load in the R packages before beginning. 
+
+``` {r markdown libraries}
+library(tidyverse)
+library(sf)
+library(cowplot)
+library(magrittr)
+library(rgdal)
+library(sf)
+library(tigris)
+options(tigris_use_cache = TRUE)
+```
+
+### Step II: Reading in data
+
+Read in point data, either from your local system file explorer (first example) or with a geoJSON API address (second example) using the [sf package](https://r-spatial.github.io/sf/). The `sf` stands for "simple features," an international standardization for storing geospatial data in a database. Simple feature geometries can be read by many different systems, including QGIS, ArcGIS, and R. By reading in the point data with the `sf` pacakge, the imported data frame will have a geometry column. 
+
+We will use the Capital Bikeshare station location geoJSON file from the open data DC portal for this example, which can be accessed [here](https://opendata.dc.gov/datasets/capital-bike-share-locations).
+
+```{r markdown points, eval = FALSE}
+point_data <- st_read("Point/to/File.csv", options = c("X_POSSIBLE_NAMES = x","Y_POSSIBLE_NAMES = y"))
+```
+
+OR
+
+```{r markdown points II, cache = TRUE, results = 'hide'}
+point_data <- st_read("https://opendata.arcgis.com/datasets/a1f7acf65795451d89f0a38565a975b3_5.geojson")
+```
+
+Be aware that if the geoJSON link is coming from a Socrata Open Data API ([SODA](https://www.tylertech.com/products/socrata/data-platform)), the link will only pull the first [1,000 records](https://dev.socrata.com/docs/queries/limit.html), and `?$limit=number` should be added to the end of the url to pull the records you need. There are timeout issues if the data is too large, so it might be more efficient to download the csv and use the first code example to load the data into RStudio. When you load the data from a csv, you just have to point to the geometry fields by replacing the `x` and `y` in the first example to correspond to your latitude and longitude columns.
+
+### Step III: Getting geographies
+
+Every state and county in the United States has a Federal Information Processing Standard (FIPS) code. For states, the five-digit code is used to uniquely identify and match records, even when names are spelled differently (which is common with county names since many counties in different states share the same name).
+
+Additionally, since the implementation of FIPS codes, several counties have experienced FIPS code changes. Depending on when the data was collected, you should check to ensure the codes are [still accurate](https://www.census.gov/programs-surveys/geography/technical-documentation/county-changes.html). 
+
+
+For this example, we will create an object with all of the state FIPS codes except for 56, the FIPS code for the United States Minor Outlying Islands (UM), which [do not have](https://www.census.gov/history/www/programs/geography/island_areas.html) census tracts:
+
+``` {r markdown location, cache = TRUE}
+location <- unique(fips_codes$state)[-56]
+```
+
+Next, you want to create a data frame of all the tracts from the geography you selected. You will want to ensure you are reading in the tracts in the correct coordinate reference system (CRS), a [standard](https://docs.qgis.org/3.4/en/docs/gentle_gis_introduction/coordinate_reference_systems.html) for determining the correct projection to display the coordinates in. To check what projection your point data are in, use the `st_crs` function in `sf`: 
+
+```{r markdown crs, cache = TRUE}
+st_crs(point_data)
+```
+
+The census defaults to the CRS 4269, so we want to make sure we read in any census tract data with a 4326 CRS. To read in the tracts, we want to create an object that feeds the `rbind` function from `sf` to `purrr`'s `reduce` function, which [allows us](https://walker-data.com/2017/05/tidycensus-every-tract/) to map the census tracts.
+```{r markdown function, cache = TRUE}
+get_tracts <- function(x){
+  tracts(state = x, cb = FALSE, class = "sf")
+  }
+
+census_tracts <- reduce(map(location, get_tracts), rbind)
+
+census_tracts <- st_transform(census_tracts, crs = 4326)
+```
+
+### Step IV: Join the points and census tracts
+The last step in matching the points to census tracts before checking for errors is joining the point data to the census tracts using `st_join`, an `sf` function which joins two data frames by a common field. We want to use `st_intersects`, which checks to see if the geometries in `x` (`point_data`) and `y` (`census_tracts`) share any space. If they do, it adds the rows together:
+``` {r markdown join, cache = TRUE}
+joined_data <- st_join(point_data, census_tracts, join = st_intersects) 
+```
+
+### Step V: Check linkages
+Then you want to check to see if there are any empty rows where points didn't match to tracts:
+``` {r markdown check, cache = TRUE}
+joined_data[is.na(joined_data$TRACTCE),]
+```
+
+Another way to check for linkage errors is to visualize the joined data on a map. To ensure you don't have a map of the entire world, save the bounding box coordinates for `point_data` (it has to be coerced to a numeric class before it can be transformed into a data frame):
+``` {r markdown bbox, cache = TRUE}
+bbox_coords <- st_bbox(point_data) %>% as.numeric() %>% as.data.frame()
+bbox_x <- bbox_coords[c(1,3),]
+bbox_y <- bbox_coords[c(2,4),]
+```
+
+Then plot it to a map to check for outliers:
+```{r markdown plot, cache = TRUE}
+ggplot() +
+  geom_sf(data = census_tracts, color = "#868686", fill = "#f2f2f2") +
+  ggtitle("Capital Bikeshare Locations in the DMV") +
+  geom_sf(data = point_data, size = 1, shape = 16, col = "red") +
+  coord_sf(xlim = bbox_x, ylim = bbox_y) +
+  theme(text=element_text(size=16, family="Sans"), 
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        axis.line = element_blank(),
+        axis.ticks = element_blank())
+```
+
+### Step VI: Save the table
+You have now created a table with the points and census tracts. You can export `joined_data` as a csv, a geoJSON, a geopackage, a shapefile, and [more](https://gdal.org/drivers/vector/index.html):
+``` {r markdown dataframe, eval = FALSE, cache = TRUE}
+st_write(joined_data, "Data/joined_data.geoJSON")
+```
+
+------
+
+## Bibliography and References
+
+JJ Allaire, Yihui Xie, Jonathan McPherson,
+  Javier Luraschi, Kevin Ushey, Aron Atkins,
+  Hadley Wickham, Joe Cheng and Winston
+  Chang (2017). rmarkdown: Dynamic Documents
+  for R. R package version 1.8.
+  https://CRAN.R-project.org/package=rmarkdown
+
+Kyle Walker (2017).
+	Getting data for every Census tract in the US with purrr and tidycensus.
+	http://walker-data.com/2017/05/tidycensus-every-tract/
+
+Yihui Xie (2017). knitr: A General-Purpose
+  Package for Dynamic Report Generation in
+  R. R package version 1.18.
+
+------
+
+```{r session info}
+sessionInfo()
+```
