@@ -7,6 +7,7 @@ html,
 body {
   height: 100%;
   position: relative;
+  font-family: Sans;
 }
 
 .main-container {
@@ -42,7 +43,7 @@ h1 {
 }
 
 img {
-  opacity: 0;
+  opacity: 0.5;
   filter: grayscale(100%);
   display: block;
   margin: 0 auto;
@@ -175,14 +176,31 @@ img {
   @media screen and (max-width: 992px) {
     .container {
       width: 600px;
-      padding: 100px;
-  }}
+      padding: 100px;}
+   .cv {
+      width:500px;}
+      #map { 
+        width:400px; 
+        height: 150px;}
+  }
 
   @media screen and (max-width: 600px) {
     .container {
       width: 500px;
       padding: 100px;
-    }}
+    }
+    #map { 
+      display: none;}
+
+      .cv {
+        width:300px; 
+      }
+
+      .about {
+        width:300px; 
+        padding: 20px;
+      }
+  }
 
 .clearfix:after {
   content: "";
