@@ -42,7 +42,7 @@ h1 {
 }
 
 img {
-  opacity: 0.5;
+  opacity: 0;
   filter: grayscale(100%);
   display: block;
   margin: 0 auto;
