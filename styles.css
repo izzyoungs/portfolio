@@ -1,10 +1,28 @@
-html {
-  font-family: Lato;
-  background-color: #ffffff;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  }
+
+html,
+body {
+  height: 100%;
+  position: relative;
 }
 
-body {
-  color: black;
+.main-container {
+  min-height:100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em;
+}
+
+.footer, .push {
+  height: 4em;
+  font-family: Lato thin;
+  font-size: 10pt;
+  color: #999;
+  text-align: center;
+  
 }
 
 a {
@@ -29,15 +47,10 @@ img {
   margin: 0 auto;
 }
 
-img:hover {
-  opacity: 1.0;
-}
-
 .header {
   text-align: center;
   padding: 10px;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
+  position: relative;
   top: 0;
 }
 
@@ -94,7 +107,7 @@ img:hover {
   width: "auto";
   opacity: 0;
   transition: .5s ease;
-  background-color: #eee;
+  background-color: #fff;
 }
 
 .container:hover .overlay {
@@ -112,10 +125,6 @@ img:hover {
   -ms-transform: translate(-50%, -50%);
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .responsive {
   float: left;
   width: 100%;
@@ -125,10 +134,10 @@ img:hover {
   margin-right: auto;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 800px) {
   .container {
     width: 100%;
-    padding: 50px;
+    padding: 200px;
   }
 
 .clearfix:after {
