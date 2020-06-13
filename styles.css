@@ -18,7 +18,7 @@ body {
 
 .footer, .push {
   height: 4em;
-  font-family: Lato thin;
+  font-family: Lato;
   font-size: 10pt;
   color: #575757;
   text-align: center;
@@ -27,6 +27,7 @@ body {
 
 a {
   color: black;
+  {text-decoration: none;}
 }
 
 text {
@@ -95,6 +96,43 @@ img {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+.about {
+  background-color: #f7f7f7;
+  border-radius: 25px;
+  position: relative;
+  width: 500px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  font-family: Lato;
+  font-size: 10pt;
+}
+
+.cv {
+  background-color: #f7f7f7;
+  border-radius: 25px;
+  position: relative;
+  width: 800px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  font-family: Lato;
+  font-size: 10pt;
+}
+
+#map { 
+  position:relative; 
+  top:0; 
+  bottom:0; 
+  width:700px; 
+  height: 200px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #000;
 }
 
 .overlay {
