@@ -27,7 +27,7 @@ body {
 
 a {
   color: black;
-  {text-decoration: none;}
+  text-decoration: none;
 }
 
 text {
@@ -172,11 +172,17 @@ img {
   margin-right: auto;
 }
 
-@media screen and (max-width: 800px) {
-  .container {
-    width: 100%;
-    padding: 200px;
-  }
+  @media screen and (max-width: 992px) {
+    .container {
+      width: 600px;
+      padding: 100px;
+  }}
+
+  @media screen and (max-width: 600px) {
+    .container {
+      width: 500px;
+      padding: 100px;
+    }}
 
 .clearfix:after {
   content: "";
