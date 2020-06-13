@@ -46,7 +46,6 @@ img:hover {
   width: 100%;
   overflow: auto;
   background-color: #fff;
-  margin-left: 0px;
 }
 
 /* Navbar links */
@@ -56,7 +55,7 @@ img:hover {
   color: #000;
   padding: 0px;
   text-decoration: none;
-  width: 20%; /* Four links of equal widths */
+  width: 20%; /* Five links of equal widths */
   text-align: center;
 }
 
@@ -102,7 +101,7 @@ img:hover {
   width: "auto";
   opacity: 0;
   transition: .5s ease;
-  background-color: #ffffff;
+  background-color: #eee;
 }
 
 .container:hover .overlay {
@@ -110,7 +109,7 @@ img:hover {
 }
 
 .text {
-  font-family: Lato black;
+  font-family: "Lato black";
   color: black;
   font-size: 15px;
   position: absolute;
