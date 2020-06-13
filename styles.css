@@ -46,22 +46,22 @@ img:hover {
   width: 100%;
   overflow: auto;
   background-color: #fff;
+  margin-left: 0px;
 }
 
 /* Navbar links */
 .topnav a {
   float: left;
   display: block;
-  color: #000;
-  padding: 5px 5px;
+  color: #fff;
+  padding: 0px;
   text-decoration: none;
   width: 20%; /* Four links of equal widths */
-  text-align: center;
 }
 
 /* Links - change color on hover */
 .topnav a:hover {
-  background-color: #eee;
+  background-color: #fff;
   color: black;
 }
 
@@ -93,20 +93,19 @@ img:hover {
 
 .overlay {
   position: absolute;
-  top: 25px;
-  bottom: 25px;
-  left: 25px;
-  right: 25px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
   height: "auto";
   width: "auto";
   opacity: 0;
   transition: .5s ease;
-  background-color: #eee;
+  background-color: #ffffff;
 }
 
 .container:hover .overlay {
   opacity: 70%;
-  padding: 25px;
 }
 
 .text {
