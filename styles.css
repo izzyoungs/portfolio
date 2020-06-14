@@ -7,7 +7,7 @@ html,
 body {
   height: 100%;
   position: relative;
-  font-family: Sans;
+  font-family: Sans-Serif;
 }
 
 .main-container {
@@ -174,32 +174,38 @@ img {
 }
 
   @media screen and (max-width: 992px) {
+    .main-container {
+      width: 250px;
+      margin-left: 0px;
+      margin-right: 0px;}
+    
     .container {
-      width: 600px;
-      padding: 100px;}
+      width: 90%;
+      padding: 50px;
+      position: relative;}
    .cv {
       width:500px;}
-      #map { 
-        width:400px; 
-        height: 150px;}
+    #map { 
+      width:400px; 
+      height: 150px;}
   }
 
   @media screen and (max-width: 600px) {
     .container {
-      width: 500px;
-      padding: 100px;
+      width: 300px;
+      padding: 25px;
     }
     #map { 
       display: none;}
 
-      .cv {
-        width:300px; 
+    .cv {
+      width:300px; 
       }
 
-      .about {
-        width:300px; 
-        padding: 20px;
-      }
+    .about {
+      width:300px; 
+      padding: 20px;
+     }
   }
 
 .clearfix:after {
