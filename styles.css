@@ -27,8 +27,11 @@ body {
 }
 
 a {
-  color: black;
+  color: #000;
   text-decoration: none;
+}
+a:hover {
+  color: #686868;
 }
 
 text {
