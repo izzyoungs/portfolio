@@ -13,8 +13,6 @@
             <link rel="stylesheet" href="https://izzy-youngs.com/styles.css" type="text/css" />
             <!-- <link rel="stylesheet" href="C:\Users\izzyo\OneDrive\Documents\GitHub\portfolio\styles.css" type="text/css" /> -->
             <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-            <script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
-<link href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css' rel='stylesheet' />
             <title>Izzy Youngs</title>
           </head>
         
@@ -57,7 +55,7 @@
         
           <main><br><br>
             <div class="cv">
-            <center><i>Curriculum vitae</i></center><br><br><div id='map'></div><br><br>
+            <center><i>Curriculum vitae</i></center><br><br>
               <b>Location:</b> Washington, DC & Reno, NV<br>
             <b>Phone:</b> (775) 420-1217<br><br>
 
@@ -139,7 +137,7 @@ Transcriber, May 2014 – December 2016<br>
 <p style="margin-left: 20px; text-indent: -20px;"><em><u>I, She, We: How and Why to Create Trainings Using Linguistic Analysis of Conference Summaries.</u></em> Northern California Writing Center Association conference, Sonoma, CA, 2014.</p><br>
 <p style="margin-left: 20px; text-indent: -20px;"><em><u>Implementing Supplemental Instruction for Developmental Courses. </u></em>Northern California Writing Center Association conference, Sacramento City College, 2013.</p>
 <br>
-<strong>Professional Skills:</strong><br>
+<strong>Professional Skills:</strong><br><br>
 <button class="button">Mapping and spatial analysis using ArcGIS, python, and R</button><br>
 <button class="button">Data wrangling with R, SPSS, Arcade, and python</button><br>
 <button class="button">Data visualization with Tableau, Mapbox, ArcGIS Pro, and R</button><br>
@@ -151,20 +149,7 @@ Transcriber, May 2014 – December 2016<br>
         </main>
         <div class = "footer">Designed and created by Izzy Youngs<br>Page passed accessibility tests 100%, but please alert me if accessibility is an issue</div>
       </div>
-      <script>
-        L.mapbox.accessToken = 'pk.eyJ1IjoiaXp6eW91bmdzIiwiYSI6ImNrODI3MHgzbjBqZXkzaHBxdGpxZDh5dWYifQ.H95COOShNs0hOU2d8wuSdg';
-        var map = L.map('map').setView([38.907, -77.036], 12);
-        
-        // Add tiles from the Mapbox Static Tiles API
-        // (https://docs.mapbox.com/api/maps/#static-tiles)
-        // Tiles are 512x512 pixels and are offset by 1 zoom level
-        L.tileLayer(
-            'https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token=' + L.mapbox.accessToken, {
-                tileSize: 512,
-                zoomOffset: -1,
-                attribution: '© <a href="https://apps.mapbox.com/feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-            }).addTo(map);
-        </script>
+      
       </body>
       
       </html>
