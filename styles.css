@@ -157,7 +157,7 @@ img {
 }
 
 .button {
-  background-color: #E5F8FF;
+  background-color: #ffffff;
   border: none;
   color: black;
   padding: 10px 20px;
@@ -194,16 +194,16 @@ img {
       margin-left: 0px;
       margin-right: 0px;}
     
-    .container {
-      width: 90%;
-      padding: 50px;
-      position: relative;}
-   .cv {
-      width:500px;}
-    #map { 
-      width:400px; 
-      height: 150px;}
-  }
+      .container {
+        width: 30%;
+        padding: 10px;
+        position: relative;}
+     .cv {
+        width:500px;}
+      #map { 
+        width:400px; 
+        height: 150px;}
+    }
 
   @media screen and (max-width: 600px) {
     .container {
