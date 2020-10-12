@@ -156,6 +156,18 @@ img {
   opacity: 70%;
 }
 
+.button {
+  background-color: #E5F8FF;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  border-radius: 16px;
+}
+
 .text {
   font-family: "Lato black";
   color: black;
