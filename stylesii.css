@@ -46,10 +46,9 @@ h1 {
 }
 
 img {
-  opacity: 0.5;
-  filter: grayscale(100%);
   display: block;
   margin: 0 auto;
+  width: 25%;
 }
 
 .header {
@@ -181,7 +180,7 @@ img {
 
 .responsive {
   float: left;
-  width: 50%;
+  width: 45%;
   height: auto;
   display: block;
   margin-left: auto;
