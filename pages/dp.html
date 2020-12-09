@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+        <html lang="en-US">
+        <head profile="http://www.w3.org/2005/10/profile">
+          <link rel="icon" type="image/png" href="https://izzy-youngs.com/pages/favicon.png">
+        
+          <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <meta property=og:title content="Izzy Youngs" />
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+            <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/base-min.css">
+            <!-- <link rel="stylesheet" href="https://izzy-youngs.com/styles.css" type="text/css" /> -->
+            <link rel="stylesheet" href="C:\Users\izzyo\OneDrive\Documents\GitHub\portfolio\stylesplay2.css" type="text/css" />
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+            <script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.css' rel='stylesheet' />
+            <title>Izzy Youngs</title>
+          </head>
+        <body style="background-color:#dedede;">
+            <div class=”main-container”>
+                <h1>2020 Census: Impact on Urban Planning</h1>
+                <br><br>
+                <div id='map'></div><br><br>
+                <h2>Every ten years, the federal government is faced with the impossible task of counting everyone in the country.</h2><br>
+                With advancements in technology, data collection, and brute force computing, it is easier than ever for data scientists and hackers to re-identify populations in large data sets through database reconstruction. To offset this risk, the Census Bureau is implementing <i>differential privacy</i> in 2020.<br>
+                <br><h2>What is differential privacy?</h2><br>
+                Differential privacy is a rigorous mathematical definition of privacy, where privacy is measured in terms of an accumulative risk, called the "global privacy loss budget." One limits the risk of a survey participant being re-identified through randomly jittering the attributes. For example, if every attribute in the Census is jittered ± a small deviation, it is less reliable and the person is less likely to be re-identified. The higher the allowable deviation (called "noise"), the lower the risk for re-identification. The risk is set through a process colloquially referred to as "epsilon" (ϵ). An epsilon of 8 is very accurate, and the dataset can be more easily reconstructed. An epsilon of .25 is very inaccurate, but survey participants' data is considered more private and protected.<br>
+                <br><h2>But what does that mean for planners?</h2><br>
+                When the Census Bureau sets epsilon, it decides how much to budget for privacy loss. If it sets the epsilon too low, the reliability of the data is almost entirely lost. The Census Bureau is still deciding what epsilon to set the 2020 census, but they released demonstration data from the 2010 census at epsilon 6, which <i>should</i> retain most of its accuracy. Urban planners should analyze the statistical variation and contemplate the consequences of changing attributes in order to make better decisions about how trustworthy and reliable the data they are using is.
+                          </div>
+                          <script>
+                            L.mapbox.accessToken = 'pk.eyJ1IjoiaXp6eW91bmdzIiwiYSI6ImNrODI3MHgzbjBqZXkzaHBxdGpxZDh5dWYifQ.H95COOShNs0hOU2d8wuSdg';
+                            var map = L.map('map').setView([51, -110], 3);
+                            
+                            // Add tiles from the Mapbox Static Tiles API
+                            // (https://docs.mapbox.com/api/maps/#static-tiles)
+                            // Tiles are 512x512 pixels and are offset by 1 zoom level
+                            L.tileLayer(
+                                'https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/{z}/{x}/{y}?access_token=' + L.mapbox.accessToken, {
+                                    tileSize: 512,
+                                    zoomOffset: -1,
+                                    attribution: '© <a href="https://apps.mapbox.com/feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                                }).addTo(map);
+                            </script>
+        </body>
+        
+        </html>
