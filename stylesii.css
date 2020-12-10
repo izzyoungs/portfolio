@@ -38,17 +38,8 @@ text {
 }
 
 h1 {
-  color: black;
-  text-align: center;
-}
-
-h2 {
     color: black;
-    text-align: center;
-  }
-
-  h3 {
-    color: black;
+    font-size: 18pt;
     text-align: center;
   }
 
@@ -163,6 +154,7 @@ img {
 .button {
   background-color: #ffffff;
   cursor: initial;
+  pointer-events: none;
   border: none;
   color: black;
   padding: 10px 20px;

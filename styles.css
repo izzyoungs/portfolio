@@ -40,16 +40,8 @@ text {
 
 h1 {
   color: black;
-  text-align: center;
-}
-
-h2 {
-  color: black;
-  text-align: center;
-}
-
-h3 {
-  color: black;
+  font-family: Oswald thin;
+  font-size: 20pt;
   text-align: center;
 }
 
@@ -98,6 +90,16 @@ img {
   display: inline-block;
   width: 20%;
   margin: auto;
+  border: 0px;
+  padding: 25px;
+}
+
+.dashboard {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   border: 0px;
   padding: 25px;
 }
@@ -165,6 +167,7 @@ img {
 .button {
   background-color: #ffffff;
   cursor: initial;
+  pointer-events: none;
   border: none;
   color: black;
   padding: 10px 20px;
@@ -204,6 +207,14 @@ img {
         width: 30%;
         padding: 10px;
         position: relative;}
+
+        .dashboard {
+          width: 90%;
+          padding: 0px;
+          position: relative;
+          margin: auto;
+        }
+
      .cv {
         width:500px;}
       #map { 
@@ -211,11 +222,19 @@ img {
         height: 150px;}
     }
 
+
   @media screen and (max-width: 600px) {
     .container {
       width: 300px;
       padding: 25px;
     }
+
+    .dashboard {
+      width: 90%;
+      padding: 0px;
+      margin: auto;
+    }
+
     #map { 
       display: none;}
 
