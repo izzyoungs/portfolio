@@ -43,6 +43,16 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  color: black;
+  text-align: center;
+}
+
+h3 {
+  color: black;
+  text-align: center;
+}
+
 img {
   opacity: 0.5;
   filter: grayscale(100%);
@@ -154,6 +164,7 @@ img {
 
 .button {
   background-color: #ffffff;
+  cursor: initial;
   border: none;
   color: black;
   padding: 10px 20px;
