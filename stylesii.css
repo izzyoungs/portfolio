@@ -1,11 +1,10 @@
-* {
-  margin: 0;
-  box-sizing: border-box;
-  }
-
 html,
 body {
   height: 100%;
+  width: 700px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   font-family: Oswald;
 }
@@ -37,6 +36,12 @@ text {
   font-size: 5pt;
 }
 
+figure {
+  color: black;
+  font-family: Lato;
+  font-size: 5pt;
+}
+
 h1 {
     color: black;
     font-size: 18pt;
@@ -46,7 +51,6 @@ h1 {
 img {
   display: block;
   margin: 0 auto;
-  width: 25%;
 }
 
 .header {
