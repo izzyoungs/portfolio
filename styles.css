@@ -2,7 +2,7 @@ html,
 body {
   height: 100%;
   position: relative;
-  font-family: Oswald;
+  font-family: monospace;
 }
 
 .main-container {
@@ -28,12 +28,12 @@ a:hover {
 
 text {
   color: black;
-  font-size: 5pt;
+  font-size: 7pt;
 }
 
 h1 {
   color: black;
-  font-family: Oswald;
+  font-family: monospace;
   font-size: 20pt;
   text-align: center;
 }
