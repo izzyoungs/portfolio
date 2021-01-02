@@ -29,6 +29,7 @@ a:hover {
 text {
   color: black;
   font-size: 7pt;
+  font-family: monospace;
 }
 
 h1 {
