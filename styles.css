@@ -164,6 +164,22 @@ img {
   border-radius: 16px;
 }
 
+/* Style buttons */
+.btn {
+  background-color: #f7f7f7;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: #f7f7f7;
+}
+
 .text {
   color: black;
   font-size: 15px;
