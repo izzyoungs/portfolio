@@ -173,11 +173,23 @@ img {
   cursor: pointer;
   font-size: 20px;
   text-align: center;
+  margin: auto;
 }
 
 /* Darker background on mouse-over */
 .btn:hover {
   background-color: #f7f7f7;
+}
+
+.skills {
+  background-color: #f7f7f7;
+  border: none;
+  color: #000000;
+  padding: 2px 2px;
+  font-size: 10pt;
+  cursor: initial;
+  pointer-events: none;
+  margin: auto;
 }
 
 .text {
