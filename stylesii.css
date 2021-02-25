@@ -182,6 +182,13 @@ img {
   border-radius: 16px;
 }
 
+.dashboard {
+  position: relative;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .text {
   color: black;
   font-size: 15px;
@@ -211,6 +218,14 @@ img {
         width: 30%;
         padding: 10px;
         position: relative;}
+        
+                .dashboard {
+          width: 600;
+          padding: 0px;
+          position: relative;
+          margin: auto;
+        }
+        
      .cv {
         width:500px;}
       #map { 
@@ -229,6 +244,12 @@ img {
     .cv {
       width:300px; 
       }
+
+    .dashboard {
+      width: 90%;
+      padding: 0px;
+      margin: auto;
+    }
 
     .about {
       width:300px; 

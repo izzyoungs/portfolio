@@ -90,13 +90,6 @@ img {
   padding: 25px;
 }
 
-.dashboard {
-  position: relative;
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .row {
   position: relative;
   width: 100%;
@@ -201,13 +194,6 @@ img {
         padding: 10px;
         position: relative;}
 
-        .dashboard {
-          width: 600;
-          padding: 0px;
-          position: relative;
-          margin: auto;
-        }
-
      .cv {
         width:500px;}
       #map { 
@@ -220,12 +206,6 @@ img {
     .container {
       width: 500px;
       padding: 25px;
-    }
-
-    .dashboard {
-      width: 90%;
-      padding: 0px;
-      margin: auto;
     }
 
     #map { 
