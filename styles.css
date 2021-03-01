@@ -114,12 +114,13 @@ img {
   background-color: #f7f7f7;
   border-radius: 25px;
   position: relative;
-  width: 500px;
+  width: 700px;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
   padding: 50px;
   font-size: 10pt;
+  font-family: verdana;
 }
 
 #map { 
@@ -166,14 +167,15 @@ img {
 
 /* Style buttons */
 .btn {
-  background-color: #f7f7f7;
+  background-color: #dddddd;
   border: none;
-  color: white;
+  color: black;
   padding: 12px 30px;
   cursor: pointer;
   font-size: 20px;
   text-align: center;
   margin: auto;
+  border-radius: 4px;
 }
 
 /* Darker background on mouse-over */
@@ -182,7 +184,7 @@ img {
 }
 
 .skills {
-  background-color: #f7f7f7;
+  background-color: #dddddd;
   border: none;
   color: #000000;
   padding: 2px 2px;
