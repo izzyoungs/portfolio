@@ -57,17 +57,17 @@ h1 {
     font-size: 18pt;
     text-align: center;
   }
-
-img {
-  width: 550px;
+  
+  .svg {
+  opacity: 1;
+  filter: grayscale(100%);
+  width: 20px;
   display: block;
   margin: 0 auto;
 }
 
-.svg {
-  opacity: 1;
-  filter: grayscale(100%);
-  width: 20px;
+img {
+  width: 550px;
   display: block;
   margin: 0 auto;
 }
