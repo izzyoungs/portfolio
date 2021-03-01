@@ -46,6 +46,13 @@ img {
   margin: 0 auto;
 }
 
+.svg {
+  opacity: 0;
+  color: black;
+  display: block;
+  margin: 0 auto;
+}
+
 .header {
   text-align: center;
   padding: 10px;
