@@ -47,8 +47,7 @@ img {
 }
 
 .svg {
-  opacity: 0;
-  color: black;
+  filter: grayscale(100%);
   display: block;
   margin: 0 auto;
 }
