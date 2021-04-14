@@ -1,18 +1,24 @@
+/* Main Body */
+
 html,
 body {
   height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
-  font-family: "Computer Modern", sans-serif;
+  font-family: "Computer Modern Sans", sans-serif;
 }
 
 .main-container {
   height: 100%;
+  width: 700px;
   margin: 0 auto -4em;
 }
 
 .footer, .push {
   height: 4em;
-  font-size: 10pt;
+  font-size: 12pt;
   color: #575757;
   text-align: center;
   
@@ -28,23 +34,94 @@ a:hover {
 
 text {
   color: black;
-  font-size: 7pt;
-  font-family: "Computer Modern", sans-serif;
+  font-size: 12pt;
+  font-family: "Computer Modern Sans", sans-serif;
 }
 
 h1 {
   color: black;
-  font-family: "Computer Modern", sans-serif;
+  font-family: "Computer Modern Sans", sans-serif;
   font-size: 20pt;
   text-align: center;
 }
 
 img {
-  opacity: 0.5;
-  filter: grayscale(100%);
+  width: 550px;
   display: block;
   margin: 0 auto;
 }
+
+.responsive {
+  float: left;
+  width: 50%;
+  opacity: 0.5;
+  filter: grayscale(100%);
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.responsive2 {
+  float: center;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 992px) {
+  .main-container {
+    width: 250px;
+    margin-left: 0px;
+    margin-right: 0px;}
+  
+    .container {
+      width: 30%;
+      padding: 10px;
+      position: relative;}
+      
+              .dashboard {
+        width: 600;
+        padding: 0px;
+        position: relative;
+        margin: auto;
+      }
+      
+   .cv {
+      width:500px;}
+  }
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 300px;
+    padding: 25px;
+  }
+
+  .cv {
+    width:300px; 
+    }
+
+  .dashboard {
+    width: 90%;
+    padding: 0px;
+    margin: auto;
+  }
+
+  .about {
+    width:300px; 
+    padding: 20px;
+   }
+}
+
+.clearfix:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Navbar */
 
 .svg {
   opacity: 1;
@@ -53,14 +130,6 @@ img {
   margin: 0 auto;
 }
 
-.header {
-  text-align: center;
-  padding: 10px;
-  position: relative;
-  top: 0;
-}
-
-/* The navbar container */
 .topnav {
   width: 100%;
   height: 150px;
@@ -70,37 +139,65 @@ img {
   background-color: #fff;
 }
 
-/* Navbar links */
 .topnav a {
   float: left;
   color: #000;
   padding: 5px 5px;
   text-decoration: none;
-  width: 19%; /* Five links of equal widths */
+  width: 19%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Links - change color on hover */
 .topnav a:hover {
   background-color: #eee;
   color: #000;
 }
 
-.container {
+.header {
+  text-align: center;
+  padding: 10px;
   position: relative;
-  display: inline-block;
-  width: 20%;
-  margin: auto;
-  border: 0px;
-  padding: 25px;
+  top: 0;
 }
 
-.row {
+/* Subpage settings  */
+
+.resilience {
+  background-color: #f7f7f7;
+  border-radius: 25px;
   position: relative;
-  width: 100%;
-  text-align: center;
+  width: 800px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  font-size: 12pt;
+  font-family: "Computer Modern Sans", sans-serif;
+}
+
+.homerule {
+  height: 100%;
+  width: 700px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  font-family: "Computer Modern Sans", sans-serif;
+}
+
+.vid {
+  position: relative;
+  width: 800px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dashboard {
+  position: relative;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -114,31 +211,45 @@ img {
   margin-left: auto;
   margin-right: auto;
   padding: 50px;
-  font-size: 10pt;
+  font-size: 15pt;
 }
 
 .cv {
   background-color: #f7f7f7;
   border-radius: 25px;
   position: relative;
-  width: 700px;
+  width: 800px;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
   padding: 50px;
-  font-size: 10pt;
-  font-family: verdana;
+  font-size: 12pt;
+  font-family: "Computer Modern Sans", sans-serif;
 }
 
-#map { 
-  position:relative; 
-  top:0; 
-  bottom:0; 
-  width:700px; 
-  height: 200px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #000;
+.button {
+  background-color: #ffffff;
+  cursor: initial;
+  pointer-events: none;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  border-radius: 16px;
+}
+
+/* Main container */
+
+.container {
+  position: relative;
+  display: inline-block;
+  width: 20%;
+  margin: auto;
+  border: 0px;
+  padding: 25px;
 }
 
 .overlay {
@@ -158,129 +269,10 @@ img {
   opacity: 70%;
 }
 
-.button {
-  background-color: #ffffff;
-  cursor: initial;
-  pointer-events: none;
-  border: none;
-  color: black;
-  padding: 10px 20px;
-  text-align: left;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  border-radius: 16px;
-}
-
-/* Style buttons */
-.btn {
-  background-color: #dddddd;
-  border: none;
-  color: black;
-  padding: 12px 30px;
-  cursor: pointer;
-  font-size: 20px;
-  text-align: center;
-  margin: auto;
-  border-radius: 4px;
-}
-
-/* Darker background on mouse-over */
-.btn:hover {
-  background-color: #f7f7f7;
-}
-
-.skills {
-  background-color: #dddddd;
-  border: none;
-  color: #000000;
-  padding: 2px 2px;
-  font-size: 10pt;
-  cursor: initial;
-  pointer-events: none;
-  margin: auto;
-}
-
-.text {
-  color: black;
-  font-size: 15px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
-.responsive {
-  float: left;
+.row {
+  position: relative;
   width: 100%;
-  height: auto;
-  display: block;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
-
-  @media screen and (max-width: 992px) {
-    .main-container {
-      width: 250px;
-      margin-left: 0px;
-      margin-right: 0px;}
-    
-      .container {
-        width: 30%;
-        padding: 10px;
-        position: relative;}
-
-     .cv {
-        width:500px;}
-      #map { 
-        width:400px; 
-        height: 150px;}
-    }
-
-
-  @media screen and (max-width: 600px) {
-    .container {
-      width: 500px;
-      padding: 25px;
-    }
-
-    #map { 
-      display: none;}
-
-    .cv {
-      width:300px; 
-      }
-
-    .about {
-      width:300px; 
-      padding: 20px;
-     }
-  }
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-  @font-face {
-    font-family: "Computer Modern";
-    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
-  }
-  @font-face {
-    font-family: "Computer Modern";
-    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsx.otf');
-    font-weight: bold;
-  }
-  @font-face {
-    font-family: "Computer Modern";
-    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf');
-    font-style: italic, oblique;
-  }
-  @font-face {
-    font-family: "Computer Modern";
-    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
-    font-weight: bold;
-    font-style: italic, oblique;
-  }

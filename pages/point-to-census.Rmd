@@ -2,9 +2,9 @@
 title: ""
 output:
   html_document:
+    theme: unite
     includes:
       in_header: "favicon.html"
-    theme: "flatly"
     pandoc_args: --tab-stop=2
     toc: yes
     toc_float: yes
@@ -17,18 +17,6 @@ output:
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato" />
 
 ```{r markdown setup, include=FALSE}
-library(knitr)
-library(tidyverse)
-library(sf)
-library(magrittr)
-library(rgdal)
-library(cowplot)
-library(sf)
-library(here)
-library(tigris)
-options(tigris_use_cache = TRUE)
-options(scipen = 999)
-
 knitr::opts_chunk$set(fig.path = "")
 knitr::opts_chunk$set(message = FALSE)
 knitr::opts_chunk$set(echo = TRUE)
@@ -43,15 +31,16 @@ Researchers often have point data that they want to append census tracts to for 
 
 The libraries you will need to complete this project are listed below. You will want to install and/or load in the R packages before beginning. 
 
-``` {r markdown libraries}
+``` {r markdown libraries, message = F, warning = F}
 library(tidyverse)
 library(sf)
 library(cowplot)
+library(leaflet)
 library(magrittr)
 library(rgdal)
-library(sf)
 library(tigris)
 options(tigris_use_cache = TRUE)
+options(scipen = 999)
 ```
 
 ### Step II: Reading in data
@@ -92,7 +81,7 @@ st_crs(point_data)
 ```
 
 The census defaults to the CRS 4269, so we want to make sure we read in any census tract data with a 4326 CRS. To read in the tracts, we want to create an object that feeds the `rbind` function from `sf` to `purrr`'s `reduce` function, which [allows us](https://walker-data.com/2017/05/tidycensus-every-tract/) to map the census tracts.
-```{r markdown function, cache = TRUE}
+```{r markdown function, cache = TRUE, warning=F, message=F, results='hide'}
 get_tracts <- function(x){
   tracts(state = x, cb = FALSE, class = "sf")
   }
@@ -104,7 +93,7 @@ census_tracts <- st_transform(census_tracts, crs = 4326)
 
 ### Step IV: Join the points and census tracts
 The last step in matching the points to census tracts before checking for errors is joining the point data to the census tracts using `st_join`, an `sf` function which joins two data frames by a common field. We want to use `st_intersects`, which checks to see if the geometries in `x` (`point_data`) and `y` (`census_tracts`) share any space. If they do, it adds the rows together:
-``` {r markdown join, cache = TRUE}
+``` {r markdown join, cache = TRUE, warning = F, message = F}
 joined_data <- st_join(point_data, census_tracts, join = st_intersects) 
 ```
 
@@ -122,13 +111,13 @@ bbox_y <- bbox_coords[c(2,4),]
 ```
 
 Then plot it to a map to check for outliers:
-```{r markdown plot, cache = TRUE}
+```{r markdown plot, cache = TRUE, message = F}
 ggplot() +
   geom_sf(data = census_tracts, color = "#868686", fill = "#f2f2f2") +
   ggtitle("Capital Bikeshare Locations in the DMV") +
   geom_sf(data = point_data, size = 1, shape = 16, col = "red") +
   coord_sf(xlim = bbox_x, ylim = bbox_y) +
-  theme(text=element_text(size=16, family="Sans"), 
+  theme(text=element_text(size=16), 
         axis.title.x = element_blank(),
         axis.title.y = element_blank(),
         axis.line = element_blank(),
