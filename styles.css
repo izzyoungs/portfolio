@@ -7,7 +7,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  font-family: "Computer Modern Sans", sans-serif;
+  font-family: "Latin Modern Roman";
 }
 
 .main-container {
@@ -35,12 +35,12 @@ a:hover {
 text {
   color: black;
   font-size: 14pt;
-  font-family: "Computer Modern Sans", sans-serif;
+  font-family: "Latin Modern Roman";
 }
 
 h1 {
   color: black;
-  font-family: "Computer Modern Sans", sans-serif;
+  font-family: "Latin Modern Roman";
   font-size: 20pt;
   text-align: center;
 }
@@ -53,7 +53,7 @@ img {
 
 .responsive {
   float: left;
-  width: 50%;
+  width: 100%;
   opacity: 0.5;
   filter: grayscale(100%);
   height: auto;
@@ -182,7 +182,7 @@ clear: both;
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  font-family: "Computer Modern Sans", sans-serif;
+  font-family: "Latin Modern Roman";
 }
 
 .vid {
@@ -222,7 +222,7 @@ clear: both;
   margin-right: auto;
   padding: 50px;
   font-size: 12pt;
-  font-family: "Computer Modern Sans", sans-serif;
+  font-family: "Latin Modern Roman";
 }
 
 .button {
