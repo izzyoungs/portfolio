@@ -2,7 +2,7 @@ html,
 body {
   height: 100%;
   position: relative;
-  font-family: monospace;
+  font-family: "Computer Modern", sans-serif;
 }
 
 .main-container {
@@ -29,12 +29,12 @@ a:hover {
 text {
   color: black;
   font-size: 7pt;
-  font-family: monospace;
+  font-family: "Computer Modern", sans-serif;
 }
 
 h1 {
   color: black;
-  font-family: monospace;
+  font-family: "Computer Modern", sans-serif;
   font-size: 20pt;
   text-align: center;
 }
@@ -263,3 +263,24 @@ img {
   display: table;
   clear: both;
 }
+
+  @font-face {
+    font-family: "Computer Modern";
+    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf');
+  }
+  @font-face {
+    font-family: "Computer Modern";
+    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsx.otf');
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: "Computer Modern";
+    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf');
+    font-style: italic, oblique;
+  }
+  @font-face {
+    font-family: "Computer Modern";
+    src: url('http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf');
+    font-weight: bold;
+    font-style: italic, oblique;
+  }
