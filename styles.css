@@ -149,6 +149,9 @@ clear: both;
   border-radius: 25px;
   padding: 5px 5px;
   background-color: #fff;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 
 .topnav a {
