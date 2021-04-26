@@ -49,6 +49,7 @@ img {
   width: 550px;
   display: block;
   margin: 0 auto;
+  border-radius: 25px;
 }
 
 .responsive {
@@ -60,6 +61,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 25px;
 }
 
 .color {
@@ -137,6 +139,7 @@ clear: both;
   height: 150px;
   margin-left: -20px;
   margin-right: auto;
+  border-radius: 25px;
   padding: 5px 5px;
   background-color: #fff;
 }
@@ -148,6 +151,7 @@ clear: both;
   text-decoration: none;
   width: 19%;
   text-align: center;
+  border-radius: 25px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -155,6 +159,7 @@ clear: both;
 .topnav a:hover {
   background-color: #eee;
   color: #000;
+  border-radius: 25px;
 }
 
 .header {
@@ -243,6 +248,7 @@ clear: both;
 .container {
   position: relative;
   display: inline-block;
+  border-radius: 25px;
   width: 20%;
   margin: auto;
   border: 0px;
@@ -251,6 +257,7 @@ clear: both;
 
 .overlay {
   position: absolute;
+  border-radius: 25px;
   top: 25px;
   bottom: 25px;
   left: 25px;
@@ -264,6 +271,7 @@ clear: both;
 
 .container:hover .overlay {
   opacity: 70%;
+  border-radius: 25px;
 }
 
 .row {
@@ -272,6 +280,7 @@ clear: both;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 25px;
 }
 
 .text {
