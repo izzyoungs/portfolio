@@ -1,15 +1,2657 @@
-<!DOCTYPE html>
-        <html lang="en-US">
-          <body>
-  <main>
 
-    <style>
-      body { margin: 0; padding: 0; }
-    </style>
-   <img src= "https://izzy-youngs.com/pages/images/banner.PNG" width = 100%><br><br>
-   <center><br><br>
-   <img src= "https://izzy-youngs.com/pages/images/header-text.PNG" width = 850px><br><br>
-   <div class='tableauPlaceholder' id='viz1634241438004' style='position: relative'><noscript><a href='#'><img alt='Main Dashboard (Map) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;De&#47;DecennialDashboard0_2&#47;MainDashboardMap&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='DecennialDashboard0_2&#47;MainDashboardMap' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;De&#47;DecennialDashboard0_2&#47;MainDashboardMap&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1634241438004');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='850px';vizElement.style.height='1127px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='850px';vizElement.style.height='1127px';} else { vizElement.style.width='100%';vizElement.style.height='4677px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
-  </body>
+<!doctype html>
+<!--[if lt IE 9]><html class="no-js no-svg ie lt-ie9 lt-ie8 lt-ie7" lang="en-US"> <![endif]-->
+<!--[if IE 9]><html class="no-js no-svg ie ie9 lt-ie9 lt-ie8" lang="en-US"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js no-svg" lang="en-US"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-becbe7a30c108bf2fa9",applicationID:"873559783"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n){return function(){return o(t,[u.now()].concat(f(arguments)),e?null:this,n),e?void 0:this}}var o=t("handle"),a=t(8),f=t(9),c=t("ee").get("tracer"),u=t("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){s[e]=i(p+e,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){function r(){return f.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,f=t(10);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],4:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],5:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof m&&!g){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),g=!0,d("timing",["fi",e,n])}}function f(t){"hidden"===t&&d("pageHide",[p.now()])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var c,u,s,d=t("handle"),p=t("loader"),l=t(7),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){c=new PerformanceObserver(r);try{c.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,h=["click","keydown","mousedown","pointerdown","touchstart"];h.forEach(function(t){document.addEventListener(t,a,!1)})}l(f)}},{}],6:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],7:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,e,!1)}e.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],8:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],9:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],10:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var f=e(i),c=v(n),u=c.length,s=0;s<u;s++)c[s].apply(f,r);var p=d[w[n]];return p&&p.push([b,n,r,f]),f}}function o(t,e){y[t]=v(t).concat(e)}function m(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function v(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:m,emit:n,get:g,listeners:v,context:e,buffer:h,abort:f,aborted:!1};return b}function o(t){return u(t,c,a)}function a(){return new r}function f(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",u=t("gos"),s=t(8),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!R++){var t=M.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();f("mark",["onload",n+M.offset],null,"api"),f("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===v.readyState&&o()}function o(){f("mark",["domContent",a()+M.offset],null,"api")}var a=t(3),f=t("handle"),c=t(8),u=t("ee"),s=t(6),d=t(4),p=t(2),l=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,g="addEventListener",h="attachEvent",y=m.XMLHttpRequest,w=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1211.min.js"},O=y&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(5),v[g]?(v[g]("DOMContentLoaded",o,!1),m[g]("load",r,!1)):(v[h]("onreadystatechange",i),m[h]("onload",r)),f("mark",["firstbyte",a.getLastTimestamp()],null,"api");var R=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,c],s],t)}f(n+"start",[o,a,c],s,u);try{return p=e.apply(a,o)}catch(m){throw f(n+"err",[o,a,m],s,u),m}finally{f(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var f,c,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)c=e[u],f=t[c],a(f)||(t[c]=n(f,s?c+r:r,i,c,o))}function f(n,r,o,a){if(!m||e){var f=m;m=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}m=f}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function f(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function c(t,e,n){var r=t[e];t[e]=f(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(9),p="nr@original",l=Object.prototype.hasOwnProperty,m=!1;e.exports=r,e.exports.wrapFunction=f,e.exports.wrapInPlace=c,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="pingback" href="https://mccourt.georgetown.edu/xmlrpc.php" />
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="stylesheet" href="https://use.typekit.net/qbp1quu.css">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer type="text/javascript">//<![CDATA[
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+//]]>
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->
+	<!-- This site is optimized with the Yoast SEO plugin v17.2.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Decennial Dashboard - McCourt School of Public Policy</title>
+	<meta name="description" content="Accurate decennial census data are critical to effective decision making at the national, state, and local levels. The Census Bureau’s population counts affect Congressional redistricting, social program funding, school planning, and more. To help state and local decision makers and data users determine the quality of 2020 Census data, we developed this dashboard to analyze [&hellip;]" />
+	<link rel="canonical" href="https://mccourt.georgetown.edu/news/decennial-dashboard/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Decennial Dashboard - McCourt School of Public Policy" />
+	<meta property="og:description" content="Accurate decennial census data are critical to effective decision making at the national, state, and local levels. The Census Bureau’s population counts affect Congressional redistricting, social program funding, school planning, and more. To help state and local decision makers and data users determine the quality of 2020 Census data, we developed this dashboard to analyze [&hellip;]" />
+	<meta property="og:url" content="https://mccourt.georgetown.edu/news/decennial-dashboard/" />
+	<meta property="og:site_name" content="McCourt School of Public Policy" />
+	<meta property="article:published_time" content="2021-08-24T19:23:20+00:00" />
+	<meta property="article:modified_time" content="2021-10-20T13:23:57+00:00" />
+	<meta property="og:image" content="https://public.tableau.com/static/images/MV/MVP_Dashboard_16293165807840/MainDashboard/1_rss.png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Written by" />
+	<meta name="twitter:data1" content="Jonathan Beam" />
+	<meta name="twitter:label2" content="Est. reading time" />
+	<meta name="twitter:data2" content="1 minute" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://mccourt.georgetown.edu/#website","url":"https://mccourt.georgetown.edu/","name":"McCourt School of Public Policy","description":"Just another WordPress site","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://mccourt.georgetown.edu/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://mccourt.georgetown.edu/news/decennial-dashboard/#primaryimage","inLanguage":"en-US","url":"https://public.tableau.com/static/images/MV/MVP_Dashboard_16293165807840/MainDashboard/1_rss.png","contentUrl":"https://public.tableau.com/static/images/MV/MVP_Dashboard_16293165807840/MainDashboard/1_rss.png"},{"@type":"WebPage","@id":"https://mccourt.georgetown.edu/news/decennial-dashboard/#webpage","url":"https://mccourt.georgetown.edu/news/decennial-dashboard/","name":"Decennial Dashboard - McCourt School of Public Policy","isPartOf":{"@id":"https://mccourt.georgetown.edu/#website"},"primaryImageOfPage":{"@id":"https://mccourt.georgetown.edu/news/decennial-dashboard/#primaryimage"},"datePublished":"2021-08-24T19:23:20+00:00","dateModified":"2021-10-20T13:23:57+00:00","author":{"@id":"https://mccourt.georgetown.edu/#/schema/person/4a1533e73329aac7555cba7fb1b2b511"},"breadcrumb":{"@id":"https://mccourt.georgetown.edu/news/decennial-dashboard/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://mccourt.georgetown.edu/news/decennial-dashboard/"]}]},{"@type":"BreadcrumbList","@id":"https://mccourt.georgetown.edu/news/decennial-dashboard/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://mccourt.georgetown.edu/"},{"@type":"ListItem","position":2,"name":"Decennial Dashboard"}]},{"@type":"Person","@id":"https://mccourt.georgetown.edu/#/schema/person/4a1533e73329aac7555cba7fb1b2b511","name":"Jonathan Beam","image":{"@type":"ImageObject","@id":"https://mccourt.georgetown.edu/#personlogo","inLanguage":"en-US","url":"https://secure.gravatar.com/avatar/4b8e57109b2d7898c7790a12b5f10ec8?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/4b8e57109b2d7898c7790a12b5f10ec8?s=96&d=mm&r=g","caption":"Jonathan Beam"},"url":"https://mccourt.georgetown.edu/news/author/jeb287/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//static.addtoany.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="McCourt School of Public Policy &raquo; Feed" href="https://mccourt.georgetown.edu/feed/" />
+<link rel="alternate" type="application/rss+xml" title="McCourt School of Public Policy &raquo; Comments Feed" href="https://mccourt.georgetown.edu/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="McCourt School of Public Policy &raquo; Decennial Dashboard Comments Feed" href="https://mccourt.georgetown.edu/news/decennial-dashboard/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/mccourt.georgetown.edu\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.8.1"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://mccourt.georgetown.edu/wp-includes/css/dist/block-library/style.min.css?ver=5.8.1' type='text/css' media='all' />
+<link rel='stylesheet' id='gu-whnu-blocks-frontend-css'  href='https://mccourt.georgetown.edu/wp-content/plugins/gu-whnu-blocks/source/inc/../../build/gu-whnu-blocks-frontend.css?ver=1634902789' type='text/css' media='all' />
+<link rel='stylesheet' id='gu-style-css'  href='https://mccourt.georgetown.edu/wp-content/themes/georgetown-child/style.css?ver=1.0.322' type='text/css' media='all' />
+<link rel='stylesheet' id='gu-style-swiper-css'  href='https://mccourt.georgetown.edu/wp-content/themes/georgetown/pattern_lab/source/css/vendor/swiper.min.css?ver=1.0.322' type='text/css' media='all' />
+<link rel='stylesheet' id='gu-style-pattern-lab-css'  href='https://mccourt.georgetown.edu/wp-content/themes/georgetown/pattern_lab/source/css/style.css?ver=1.0.322' type='text/css' media='all' />
+<script type='text/javascript' src='https://mccourt.georgetown.edu/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
+<script type='text/javascript' src='https://mccourt.georgetown.edu/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='https://mccourt.georgetown.edu/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-form-move-tracker.js?ver=1.13.1' id='gtm4wp-form-move-tracker-js'></script>
+<link rel="https://api.w.org/" href="https://mccourt.georgetown.edu/wp-json/" /><link rel="alternate" type="application/json" href="https://mccourt.georgetown.edu/wp-json/wp/v2/posts/25193" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://mccourt.georgetown.edu/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://mccourt.georgetown.edu/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.8.1" />
+<link rel='shortlink' href='https://mccourt.georgetown.edu/?p=25193' />
+<link rel="alternate" type="application/json+oembed" href="https://mccourt.georgetown.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmccourt.georgetown.edu%2Fnews%2Fdecennial-dashboard%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://mccourt.georgetown.edu/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmccourt.georgetown.edu%2Fnews%2Fdecennial-dashboard%2F&#038;format=xml" />
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer type="text/javascript">//<![CDATA[
+	var dataLayer_content = {"pagePostType":"post","pagePostType2":"single-post","pageCategory":["centering-inclusion","discovery-impact","research"],"pagePostAuthor":"Jonathan Beam"};
+	dataLayer.push( dataLayer_content );//]]>
+</script>
+<script data-cfasync="false">//<![CDATA[
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.'+'js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KBH6LKD');//]]>
+</script>
+<!-- End Google Tag Manager -->
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><link rel="apple-touch-icon" sizes="180x180" href="/wp-content/uploads/fbrfg/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/wp-content/uploads/fbrfg/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/wp-content/uploads/fbrfg/favicon-16x16.png">
+<link rel="manifest" href="/wp-content/uploads/fbrfg/site.webmanifest">
+<link rel="mask-icon" href="/wp-content/uploads/fbrfg/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/wp-content/uploads/fbrfg/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/wp-content/uploads/fbrfg/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">		<style type="text/css" id="wp-custom-css">
+			/** Make button on apply form look like a button. Form is external from GradApply. **/
+#form_fdb7cdf1-d295-4a48-8712-10baa8360317_container button {
+	font-size: 1.125rem;
+	line-height: 1.222;
+	font-family: 'futura-pt', Arial, sans-serif;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	position: relative;
+	background: transparent;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+  text-decoration: none;
+  text-align: center;
+  color: #041E42;
+  height: 3.4375rem;
+	border: 0.0625rem solid #041E42;
+  border-radius: 0;
+  white-space: normal;
+}
+
+#form_fdb7cdf1-d295-4a48-8712-10baa8360317_container button:hover,
+#form_fdb7cdf1-d295-4a48-8712-10baa8360317_container button:focus {
+	transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+	background-color: #041E42;
+  color: #FFF;
+  text-decoration: none;
+    border: 0.0625rem solid #FFF;
+}		</style>
+		
+      </head>
+
+
+  <body class="post-template-default single single-post postid-25193 single-format-standard header-default" data-template="base.twig">
+
+    <div class="lc--layout-container lc--full sfs">
+
+      <div class="l--layout l--full">
+
+        
+  <header id="l--main-header" class="header" aria-label="Site Header">
+
+          <nav aria-label="Skip Links">
+        <ul>
+          <li><a href="#navigation" class="skip-link">Skip to Main Navigation</a></li>
+          <li><a href="#content" class="skip-link">Skip to Content</a></li>
+          <li><a href="#footer" class="skip-link">Skip to Footer</a></li>
+        </ul>
+      </nav>
+
+      <div class="r--region r--header" id="navigation">
+                <div class="cc--component-container cc--sfs-header-mobile">
+          <div class="c--component c--sfs-header-mobile">
+            <div class="main-nav-container">
+              <div class="header-top">
+                <button class="hamburger" aria-label="Open Menu"></button>
+
+                                
+
+  <div class="f--field f--sfs-logo">
+    <a href="https://mccourt.georgetown.edu" class="sfs-logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 282.05 83.4" role="presentation">
+  <title>McCourt School of Public Policy</title>
+  <g>
+    <path d="M2.3,2.83H12.7l5,24.5h.1l5-24.5H33.13V37.54H26.71V9.83h-.1L20.44,37.54H15L8.82,9.83h-.1V37.54H2.3V2.83Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M48.81,20.82c0-2.53-.49-5.25-3-5.25-3.31,0-3.84,2.92-3.84,9,0,6.47.63,9.14,3.6,9.14,2.29,0,3.26-1.85,3.26-6.13h6.42c0,6.85-2.82,10.7-10,10.7-6.71,0-10-3.26-10-13.76,0-10.75,4.38-13.76,10.6-13.76s9.38,3.89,9.38,10.11Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M72.91,14.54c0-5.06-1-7.24-4.18-7.24-3.5,0-4.38,3.5-4.38,13.37,0,10.5,1.46,12.4,4.47,12.4,2.48,0,4.38-1.26,4.38-8.8h7c0,7.54-1.85,14-11,14-10.5,0-11.81-7.49-11.81-18s1.31-18,11.81-18c10,0,10.74,7.34,10.74,12.4Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M92.67,10.7c8-.15,10.31,4.62,10.31,13.76,0,8.95-2.67,13.76-10.31,13.76-8,.15-10.31-4.62-10.31-13.76C82.36,15.52,85,10.7,92.67,10.7Zm0,23c2.72,0,3.6-2.63,3.6-9.19s-.87-9.19-3.6-9.19c-3.31,0-3.6,3.84-3.6,9.19S89.36,33.65,92.67,33.65Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M118.51,34.48h-.1a7.12,7.12,0,0,1-6.66,3.74c-4.23,0-6.66-2.24-6.66-7.44V11.38h6.71v18c0,2.67.87,3.65,2.87,3.65,2.38,0,3.55-1.46,3.55-4.33V11.38h6.71V37.54h-6.42V34.48Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M127.05,11.38h6.42v3.5h.1c1.36-2.53,3.26-4.18,6-4.18a10,10,0,0,1,1.22.1v6.42c-.73,0-1.36-.1-2.09-.1-2.33,0-5,1.22-5,4.72v15.7h-6.71V11.38Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M140.81,3.9h6.71v7.49h3.89V16h-3.89V30.11c0,2.09.44,2.87,2.38,2.87a13.66,13.66,0,0,0,1.51-.1v4.67a42,42,0,0,1-4.38.29c-5.25,0-6.22-1.65-6.22-6.9V3.9Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M169.9,26.7v1c0,3.26.92,5.35,4.62,5.35a4,4,0,0,0,4.18-4.28c0-3.11-1.56-4.38-6.22-5.93-6.22-2.09-9.09-4.76-9.09-10.5,0-6.81,4.08-10.21,10.75-10.21,6.22,0,10.74,2.67,10.74,9.33v1h-6.71c0-3.31-1.07-5.15-3.79-5.15-3.16,0-4,2-4,4s.63,3.5,3.6,4.71l5.4,2.33c5.25,2.33,6.61,4.91,6.61,9.19,0,7.34-4.47,10.65-12.06,10.65-7.92,0-11-3.7-11-10.11V26.7Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M201.68,20.82c0-2.53-.49-5.25-3-5.25-3.31,0-3.84,2.92-3.84,9,0,6.47.63,9.14,3.6,9.14,2.29,0,3.26-1.85,3.26-6.13h6.42c0,6.85-2.82,10.7-10,10.7-6.71,0-10-3.26-10-13.76,0-10.75,4.38-13.76,10.6-13.76s9.38,3.89,9.38,10.11Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M210.22,2.83h6.71V14.06h.1c1.31-2.29,3.5-3.36,6.37-3.36,4.23,0,6.66,2.24,6.66,7.44v19.4h-6.71v-18c0-2.67-.88-3.65-2.87-3.65-2.38,0-3.55,1.46-3.55,4.33V37.54h-6.71V2.83Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M242.48,10.64c8-.15,10.31,4.62,10.31,13.76,0,9-2.67,13.76-10.31,13.76-8,.15-10.31-4.62-10.31-13.76C232.17,15.45,234.85,10.64,242.48,10.64Zm0,23c2.72,0,3.6-2.63,3.6-9.19s-.87-9.19-3.6-9.19c-3.31,0-3.6,3.84-3.6,9.19S239.17,33.59,242.48,33.59Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M265.21,10.77c8-.15,10.31,4.62,10.31,13.76,0,8.95-2.67,13.76-10.31,13.76-8,.15-10.31-4.62-10.31-13.76C254.91,15.58,257.58,10.77,265.21,10.77Zm0,23c2.72,0,3.6-2.63,3.6-9.19s-.88-9.19-3.6-9.19c-3.31,0-3.6,3.84-3.6,9.19S261.91,33.72,265.21,33.72Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M277.64,2.83h6.71V37.54h-6.71Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M2.44,69.74a12.27,12.27,0,0,1,3.13-8.39A6.88,6.88,0,0,1,10.86,59a4.42,4.42,0,0,1,4.62,4.69,14.18,14.18,0,0,1-3.21,8.72A6.69,6.69,0,0,1,6.9,74.84C4.71,74.84,2.44,73.16,2.44,69.74Zm8.19-.38C12,67,13.16,63.92,13.16,62.58a1.58,1.58,0,0,0-1.6-1.68c-1.53,0-2.94,1.3-4.77,4.36a13,13,0,0,0-2,5.81,1.67,1.67,0,0,0,1.57,1.75C7.84,72.83,9.18,71.79,10.63,69.36Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M29.08,59.79c.22,0,.3.15.22.37l-.19,1c0,.22-.11.3-.41.3H25c-.82,2.91-2.46,9.32-4,13.64-2.05,5.63-5,10.47-9.39,10.47-1.94,0-3.13-1-3.13-2.31a1.7,1.7,0,0,1,1.71-1.79A1.9,1.9,0,0,1,12,83.38a.68.68,0,0,0,.75.6c1.71,0,3.5-3.13,5.29-10l3.35-12.6h-3.2c-.22,0-.3-.15-.26-.37l.19-.89c.07-.22.15-.37.45-.37H21.7c1.12-2.95,1.71-5.48,4.25-8.24A8.29,8.29,0,0,1,31.61,49c2.76,0,4,1.34,4,2.46a1.75,1.75,0,0,1-1.71,1.79,1.78,1.78,0,0,1-2-1.71,1.29,1.29,0,0,0-1.34-1.08c-2.91,0-4.1,5.4-5.22,9.39h3.8Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M43.14,70.44c-.37,1.42-.22,2.65,1.19,2.65h1.42c.3,0,.34.15.3.37l-.07.78c0,.26-.15.34-.45.34-.45,0-2-.11-5.29-.11-3.06,0-4.4.11-4.92.11-.22,0-.3-.15-.3-.37l.07-.75c.07-.22.15-.37.45-.37h.67c1.79,0,2.39-1.34,2.8-2.87l4.43-16.77c.34-1.23.45-2.57-1-2.57H40.76c-.22,0-.22-.15-.22-.37l.22-.78c.08-.22.15-.22.52-.22s7-.11,8.27-.11c4,0,5.81.26,7.6,1.75s2.24,2.53,2.24,5.07c0,4-3.21,8.12-10.81,8.12a14.12,14.12,0,0,1-3.73-.45Zm2.09-8a6.31,6.31,0,0,0,2.91.6c4.7,0,6.86-3.88,6.86-7.16,0-4.4-3.58-5.25-5.29-5.25a8.1,8.1,0,0,0-1.34.07Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M72.36,59.56c.08-.22.3-.22.52-.22h2.53c.37,0,.45.15.37.45l-2.61,7.6a40.51,40.51,0,0,0-1.49,4.7c0,.37.15.45.37.45.52,0,1.94-1.42,2.46-2.09.07-.15.22-.15.37,0l.45.34a.34.34,0,0,1,0,.37c-.37.6-3.06,3.73-6.19,3.73A1.08,1.08,0,0,1,68,73.73c0-.52,1.64-4.77,2-5.85l-.26-.15c-1.49,2.12-5.07,7.12-8.72,7.12a1.91,1.91,0,0,1-1.71-1.71c0-1.41.9-3.35,2.42-6.75a18.15,18.15,0,0,0,1.6-4.58.61.61,0,0,0-.67-.6c-.6,0-2,1.27-2.68,2a.24.24,0,0,1-.41,0l-.41-.37c-.07-.07-.07-.15,0-.3.6-.67,3-3.58,6.19-3.58a1.53,1.53,0,0,1,1.57,1.56c0,.9-.71,2.87-2.12,6.22a22.12,22.12,0,0,0-1.75,5,.59.59,0,0,0,.6.6c1.27,0,4.92-4.4,5.89-6a14.45,14.45,0,0,0,1.71-3.43Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M88.91,49.31c.37,0,.45.3.3.63l-6,13.49.3.07c1.71-2.39,4.1-4.55,6.78-4.55A2.81,2.81,0,0,1,93,62c0,1.9-1,5.55-4.47,9.13A10.92,10.92,0,0,1,80,74.83c-1.71,0-3-1-3-2.61A7.7,7.7,0,0,1,77.51,70c2.46-6.19,4.92-12.15,7.23-17.85a2.73,2.73,0,0,0,.22-.89c0-.37-.37-.6-.89-.6H83c-.22,0-.37-.08-.3-.3l.22-.75c.07-.22.15-.3.37-.3h5.67ZM83,65.82a16.53,16.53,0,0,0-2.53,6.26c0,.89.45,1.27,1.34,1.27,1,0,2.53-1,3.84-2.35a12.72,12.72,0,0,0,3.69-8.12c0-1.08-.52-1.68-1.12-1.68C87.12,61.2,84.89,63.06,83,65.82Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M100.47,52.93c.49-1.3.45-2.27-.67-2.27H98.61c-.15,0-.19-.11-.15-.3l.22-.86a.27.27,0,0,1,.3-.19h5.74c.34,0,.41.22.3.56L97.49,70.22c-.37,1-.75,2.23,0,2.23s2.24-1.41,2.68-1.94c.15-.07.22-.07.37.07L101,71c.07.15.15.22,0,.45s-3.35,3.43-6.63,3.43a1.33,1.33,0,0,1-1.27-1.34,23.47,23.47,0,0,1,1.19-3.73Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M108.37,69.7a8.28,8.28,0,0,0-.67,2.39c0,.3.15.52.45.52.75-.07,2.68-2.09,2.91-2.39.07-.15.22-.15.34,0l.41.41c.15.15.22.22.07.37-.22.3-2.83,3.87-6.89,3.87a1,1,0,0,1-1.08-1c0-.75.6-2.5,2.09-6.63l1-2.91a7.78,7.78,0,0,0,.6-2.16.4.4,0,0,0-.45-.45c-.6,0-2.31,1.94-2.83,2.53a.28.28,0,0,1-.45,0l-.37-.34c-.15-.11-.22-.19-.15-.34s3.58-4.55,6.86-4.55c.89,0,1.34.45,1.34,1.19A16,16,0,0,1,110.47,64ZM109,52.44a2.12,2.12,0,0,1,2.09-2,2,2,0,0,1,2.27,1.86,2.32,2.32,0,0,1-2.2,2.16A2,2,0,0,1,109,52.44Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M122.94,71.26c.15.07.22.15.07.37-.56.82-3,3.2-5.74,3.2a3.44,3.44,0,0,1-3.35-3.69C113.92,65.92,118,59,122.6,59A2.33,2.33,0,0,1,125.17,61a1.81,1.81,0,0,1-1.57,1.86,1.19,1.19,0,0,1-1.27-.89c-.22-.52-.56-1.12-1.16-1.12-.82,0-1.53.89-2.24,2.53A17.65,17.65,0,0,0,117.48,70c0,1.86.56,2.68,1.53,2.68A5.14,5.14,0,0,0,122.1,71c.07-.15.22-.22.3-.15Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M140.05,70.44c-.37,1.42-.22,2.65,1.19,2.65h1.42c.3,0,.34.15.3.37l-.08.78c0,.26-.15.34-.45.34-.45,0-2-.11-5.29-.11-3.06,0-4.4.11-4.92.11-.22,0-.3-.15-.3-.37l.07-.75c.07-.22.15-.37.45-.37h.67c1.79,0,2.39-1.34,2.8-2.87l4.43-16.77c.34-1.23.45-2.57-1-2.57h-1.71c-.22,0-.22-.15-.22-.37l.22-.78c.08-.22.15-.22.52-.22s7-.11,8.27-.11c4,0,5.81.26,7.6,1.75,1.64,1.34,2.24,2.53,2.24,5.07,0,4-3.21,8.12-10.81,8.12a14.12,14.12,0,0,1-3.73-.45Zm2.09-8a6.31,6.31,0,0,0,2.91.6c4.7,0,6.86-3.88,6.86-7.16,0-4.4-3.58-5.25-5.29-5.25a8.1,8.1,0,0,0-1.34.07Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M154.82,69.74A12.27,12.27,0,0,1,158,61.35,6.88,6.88,0,0,1,163.24,59a4.42,4.42,0,0,1,4.62,4.69,14.18,14.18,0,0,1-3.21,8.72,6.69,6.69,0,0,1-5.37,2.46C157.09,74.84,154.82,73.16,154.82,69.74Zm8.2-.38c1.38-2.35,2.53-5.44,2.53-6.78A1.58,1.58,0,0,0,164,60.9c-1.53,0-2.94,1.3-4.77,4.36a13,13,0,0,0-2,5.81,1.67,1.67,0,0,0,1.57,1.75C160.22,72.83,161.56,71.79,163,69.36Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M176.4,52.93c.49-1.3.45-2.27-.67-2.27h-1.19c-.15,0-.19-.11-.15-.3l.22-.86a.27.27,0,0,1,.3-.19h5.74c.34,0,.41.22.3.56l-7.53,20.35c-.37,1-.75,2.23,0,2.23s2.24-1.41,2.68-1.94c.15-.07.22-.07.37.07l.45.37c.07.15.15.22,0,.45s-3.35,3.43-6.63,3.43A1.33,1.33,0,0,1,169,73.49a23.47,23.47,0,0,1,1.19-3.73Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M184.3,69.7a8.28,8.28,0,0,0-.67,2.39c0,.3.15.52.45.52.75-.07,2.68-2.09,2.91-2.39.07-.15.22-.15.34,0l.41.41c.15.15.22.22.07.37-.22.3-2.83,3.87-6.89,3.87a1,1,0,0,1-1.08-1c0-.75.6-2.5,2.09-6.63l1-2.91a7.78,7.78,0,0,0,.6-2.16.4.4,0,0,0-.45-.45c-.6,0-2.31,1.94-2.83,2.53a.28.28,0,0,1-.45,0l-.37-.34c-.15-.11-.22-.19-.15-.34.22-.22,3.58-4.55,6.86-4.55.89,0,1.34.45,1.34,1.19A16,16,0,0,1,186.4,64Zm.64-17.26a2.12,2.12,0,0,1,2.09-2,2,2,0,0,1,2.27,1.86,2.32,2.32,0,0,1-2.2,2.16A2,2,0,0,1,184.94,52.44Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M198.87,71.26c.15.07.22.15.07.37-.56.82-3,3.2-5.74,3.2a3.44,3.44,0,0,1-3.35-3.69c0-5.22,4.06-12.19,8.68-12.19A2.33,2.33,0,0,1,201.1,61a1.81,1.81,0,0,1-1.57,1.86,1.19,1.19,0,0,1-1.27-.89c-.22-.52-.56-1.12-1.16-1.12-.82,0-1.53.89-2.24,2.53A17.65,17.65,0,0,0,193.41,70c0,1.86.56,2.68,1.53,2.68A5.14,5.14,0,0,0,198,71c.07-.15.22-.22.3-.15Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M209.35,73.57a45.89,45.89,0,0,0,3.35-7.45,9.69,9.69,0,0,0,.45-2.38,5.47,5.47,0,0,0-.3-1.72,4.87,4.87,0,0,1-.37-1.49A1.65,1.65,0,0,1,214.34,59c1.42,0,1.86,1,1.86,2.38,0,1.64-1.34,4.92-2.61,7.45-1.86,3.65-5.81,10.21-9.06,13.34-1.08,1-3.32,3.39-5.63,3.39-1.64,0-2.39-.89-2.39-1.94a2,2,0,0,1,1.71-1.94,1.69,1.69,0,0,1,1.34.67,1.74,1.74,0,0,0,1,.52,3.18,3.18,0,0,0,1.68-.63A16.32,16.32,0,0,0,206,78a3.76,3.76,0,0,0,.37-2.53c-.07-1.19-.93-11.11-1.38-12.75-.19-.67-.26-1-.71-1-.67,0-1.64,1.86-1.94,2.68-.07.22-.15.22-.34.19l-.56-.19c-.15,0-.15-.15-.07-.45s1.71-5,5-5c1.34,0,2.09,1,2.31,4.1.3,4.25.45,8.65.48,10.51h.23Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+  </g>
+</svg>
+
+    </a>
+  </div>
+                    
+
+
+<div
+        class="f--field f--search-button"
+                >
+
+    
+      <button class="open-search" aria-haspopup="true">
+    Open Search Form
+  </button>
+
+</div><!-- f--field f--search-button -->
+
+              </div>
+
+                            <div id="mobile-menu">
+                <div class="cc--component-container cc--sfs-main-menu">
+                  <div class="c--component c--sfs-main-menu">
+
+                                          <nav aria-label="Main Mobile">
+                        
+    <ul>
+          <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-90 menu-item-has-children has-children">
+        
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/programs/" target="" class="menu-item-text">Programs</a>
+
+              <button aria-label="Expand Sub-Navigation" class="toggle"></button>
+    
+      </div>
+
+                          <div class="submenu" aria-hidden="true">
+            <ul>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-3402 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/programs/degree-programs/" target="" class="menu-item-text">Graduate Programs</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-3163 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/programs/dual-degree-programs/" target="" class="menu-item-text">Dual Degree Programs</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-2948 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/programs/international-programs/" target="" class="menu-item-text">International Programs</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-3162 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/programs/certificate-programs/" target="" class="menu-item-text">Certificate Programs</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-3165 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/executive-education/" target="" class="menu-item-text">Executive Education</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                          </ul>
+          </div>
+                
+      </li>
+          <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-375 menu-item-has-children has-children">
+        
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/people/" target="" class="menu-item-text">People</a>
+
+              <button aria-label="Expand Sub-Navigation" class="toggle"></button>
+    
+      </div>
+
+                          <div class="submenu" aria-hidden="true">
+            <ul>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-3164 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/people/leadership-team/" target="" class="menu-item-text">Leadership Team</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-4607 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/people/faculty/" target="" class="menu-item-text">Faculty and Researchers</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-3161 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/people/staff/" target="" class="menu-item-text">Staff</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-6968 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/people/alumni-profiles/" target="" class="menu-item-text">Alumni</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                          </ul>
+          </div>
+                
+      </li>
+          <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-87 menu-item-has-children has-children">
+        
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/research/" target="" class="menu-item-text">Research</a>
+
+              <button aria-label="Expand Sub-Navigation" class="toggle"></button>
+    
+      </div>
+
+                          <div class="submenu" aria-hidden="true">
+            <ul>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-7403 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/research/featured-publications/" target="" class="menu-item-text">Featured Publications</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-3218 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/research/mccourt-centers/" target="" class="menu-item-text">Centers and Initiatives</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-13130 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="http://politics.georgetown.edu/#new_tab" target="_blank" class="menu-item-text">GU Politics</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-19756 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/research/research-data-center/" target="" class="menu-item-text">Research Data Center</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-7033 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/research/the-massive-data-institute/" target="" class="menu-item-text">Massive Data Institute</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-7405 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/people/faculty/" target="" class="menu-item-text">Faculty and Researchers</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-7404 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/research/faculty-seminars/" target="" class="menu-item-text">Research Seminars</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                          </ul>
+          </div>
+                
+      </li>
+          <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-2055 menu-item-has-children has-children">
+        
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/admissions/" target="" class="menu-item-text">Admissions</a>
+
+              <button aria-label="Expand Sub-Navigation" class="toggle"></button>
+    
+      </div>
+
+                          <div class="submenu" aria-hidden="true">
+            <ul>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-2944 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/admissions/application-requirements/" target="" class="menu-item-text">Application Requirements</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-2943 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/admissions/dates-deadlines/" target="" class="menu-item-text">Application Deadlines</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-3168 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/admissions/cost-aid-assistance/" target="" class="menu-item-text">Cost, Aid, and Assistance</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-23326 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/admissions/mccourts-foundational-skill-set/" target="" class="menu-item-text">McCourt’s Foundational Skill Set</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-9549 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://gradapply.georgetown.edu/portal/mccourt-events#new_tab" target="_blank" class="menu-item-text">Admissions Events</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-2946 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/admissions/mccourt-ambassadors/" target="" class="menu-item-text">McCourt Ambassadors</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-6094 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/admissions/mccourt-scholars/" target="" class="menu-item-text">McCourt Scholars</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-5874 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/admissions/class-profiles/" target="" class="menu-item-text">Class Profiles</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-2945 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/admissions/international-applicants/" target="" class="menu-item-text">International Applicants</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-5873 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/admissions/admissions-faq/" target="" class="menu-item-text">Admissions FAQ and Contact Information</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                          </ul>
+          </div>
+                
+      </li>
+          <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-371 menu-item-has-children has-children">
+        
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/life-at-mccourt/" target="" class="menu-item-text">Life at McCourt</a>
+
+              <button aria-label="Expand Sub-Navigation" class="toggle"></button>
+    
+      </div>
+
+                          <div class="submenu" aria-hidden="true">
+            <ul>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-21066 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/life-at-mccourt/student-organizations/" target="" class="menu-item-text">Student Organizations</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-3171 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/life-at-mccourt/community-engagement/" target="" class="menu-item-text">Community Engagement</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-20029 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://www.georgetown.edu/events/calendar/mccourt/#_ga=2.5432375.560549927.1605541980-682498265.1576267401&#038;_gac=1.114887157.1602712131.CjwKCAjww5r8BRB6EiwArcckCzArOLYnV8emKiNLIfDGQERH8X_FAwmiSat-DiMzaCzSONf8Gl0tZhoCTk4QAvD_BwE#new_tab" target="_blank" class="menu-item-text">Events at McCourt</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-7391 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/life-at-mccourt/research-opportunities/" target="" class="menu-item-text">Research Opportunities</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-7390 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/life-at-mccourt/opportunities-at-georgetown/" target="" class="menu-item-text">Opportunities at Georgetown</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-3169 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/life-at-mccourt/life-in-d-c/" target="" class="menu-item-text">Life in DC</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-7389 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/life-at-mccourt/resources-for-current-students/" target="" class="menu-item-text">Resources for Current Students</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                          </ul>
+          </div>
+                
+      </li>
+      </ul>
+  
+                      </nav>
+                    
+                  </div>
+                </div>
+
+                <div class="cc--component-container cc--sfs-secondary-menu">
+                  <div class="c--component c--sfs-secondary-menu">
+
+                                          <nav aria-label="Secondary Mobile">
+                        
+    <ul>
+          <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-21290 ">
+        
+<div class="menu-item-container">
+    
+        <a href="https://gradapply.georgetown.edu/apply/#_ga=2.21677308.696313303.1611239671-682498265.1576267401#new_tab" target="_blank" class="menu-item-text">Apply Now</a>
+
+        
+      </div>
+
+                        
+      </li>
+          <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-3537 menu-item-has-children has-children">
+        
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/careers-with-impact/" target="" class="menu-item-text">Careers with Impact</a>
+
+              <button aria-label="Expand Sub-Navigation" class="toggle"></button>
+    
+      </div>
+
+                          <div class="submenu" aria-hidden="true">
+            <ul>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-7492 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/careers-with-impact/careers-in-policy/" target="" class="menu-item-text">Careers in Policy</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-7488 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/careers-with-impact/employment-outcomes/" target="" class="menu-item-text">Employment Outcomes</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-7490 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/careers-with-impact/resources-for-students/" target="" class="menu-item-text">Resources for Students</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-7484 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/careers-with-impact/resources-for-alumni/" target="" class="menu-item-text">Resources for Alumni</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-7482 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/careers-with-impact/resources-for-employers/" target="" class="menu-item-text">Resources for Employers</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-7481 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/careers-with-impact/career-development-team/" target="" class="menu-item-text">Career Development Team</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                          </ul>
+          </div>
+                
+      </li>
+          <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-92 menu-item-has-children has-children">
+        
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/about-us/" target="" class="menu-item-text">About Us</a>
+
+              <button aria-label="Expand Sub-Navigation" class="toggle"></button>
+    
+      </div>
+
+                          <div class="submenu" aria-hidden="true">
+            <ul>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-5863 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/about-us/mission/" target="" class="menu-item-text">Our Mission</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-19215 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/about-us/a-letter-from-our-dean/" target="" class="menu-item-text">A Letter from our Dean</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-5864 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/about-us/history/" target="" class="menu-item-text">Our History</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-5865 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/about-us/our-donor/" target="" class="menu-item-text">Our Founding Donor</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-18725 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/about-us/confronting-racism/" target="" class="menu-item-text">Confronting Racism Initiative</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                          </ul>
+          </div>
+                
+      </li>
+          <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-4522 menu-item-has-children has-children">
+        
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/news/" target="" class="menu-item-text">News</a>
+
+              <button aria-label="Expand Sub-Navigation" class="toggle"></button>
+    
+      </div>
+
+                          <div class="submenu" aria-hidden="true">
+            <ul>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-4564 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/news/policy-perspectives/" target="" class="menu-item-text">Policy Perspectives</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-4563 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/news/the-policy-memo/" target="" class="menu-item-text">The Policy Memo</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-19663 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/mccourt-impacts/" target="" class="menu-item-text">McCourt Impacts</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                          </ul>
+          </div>
+                
+      </li>
+          <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-93 menu-item-has-children has-children">
+        
+<div class="menu-item-container">
+    
+        <a href="https://giving.georgetown.edu/what-to-support/schools-programs/mccourt-school-of-public-policy/" target="" class="menu-item-text">Giving</a>
+
+              <button aria-label="Expand Sub-Navigation" class="toggle"></button>
+    
+      </div>
+
+                          <div class="submenu" aria-hidden="true">
+            <ul>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-7491 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/support-funds/" target="" class="menu-item-text">Support Funds</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                          </ul>
+          </div>
+                
+      </li>
+      </ul>
+  
+                      </nav>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+                <div class="cc--component-container cc--sfs-header">
+          <div class="c--component c--sfs-header">
+            <div class="header-top">
+              <div class="header-top-inner">
+
+                                                  <div class="f--field f--georgetown-logo">
+                    <a href="https://www.georgetown.edu"
+                       target=""
+                       aria-label="Georgetown University"
+                       class="georgetown-logo">
+                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300.1 21.9" enable-background="new 0 0 300.1 21.9" xml:space="preserve">
+   <title>Georgetown University</title>
+<path fill="#FFFFFF" d="M10.7,16.7c-0.2,0.7-0.6,2-0.9,2.6c-0.6,1.1-2.1,2.6-3.7,2.6c-2,0-2.8-1-2.8-2
+	c0-0.8,0.4-1.3,1.2-1.3s0.9,0.7,0.9,0.9c0,0.3-0.1,0.6-0.2,0.7c0,0-0.1,0.1-0.1,0.3c0,0.4,0.5,0.7,0.9,0.7c1.1,0,1.7-0.9,2.1-2.4
+	c0.3-1,0.6-2.7,1.4-5.7H9.4c-0.3,0.4-1.5,2.1-4.4,2.1c-3,0-5-2.1-5-5.8c0-2.8,1.3-5.1,2.9-6.7c1.2-1.2,3.1-2.5,6-2.5
+	c2.2,0,3.4,0.7,3.8,1.1c0.3,0.2,0.5,0.3,0.6,0.3c0.3,0,0.4-0.2,0.5-0.7c0-0.1,0.1-0.1,0.2-0.1l0.3,0.1c0.1,0,0.2,0.1,0.1,0.2
+	l-1.2,4.3c0,0.1-0.1,0.2-0.2,0.1h-0.3c-0.1,0-0.2-0.1-0.2-0.2c0.4-1.8-0.7-4.1-3.5-4.1c-1.4,0-2.9,0.5-4.4,2.4c-1.2,1.6-2,3.9-2,6.5
+	c0,3.5,2.2,4.1,3.1,4.1c2.6,0,3.8-2.2,3.9-3.5c0.1-0.8-0.2-1-0.8-1H8.3C8.1,9.6,8.1,9.5,8.1,9.4l0.1-0.5c0-0.1,0.1-0.2,0.2-0.2
+	c0.3,0,1.1,0.1,3,0.1c1.5,0,2-0.1,2.3-0.1c0.2,0,0.2,0.1,0.2,0.2l-0.1,0.5c0,0.1-0.1,0.2-0.2,0.2h-0.5c-0.4,0-0.7,0.2-1,1.3
+	L10.7,16.7z M27.2,11c-0.1-0.1-0.2,0-0.3,0c-0.3,0.4-1.5,1.8-2,2.2C24.3,13.7,23.7,14,23,14h-4.8l2.1-6.5h1.1c1.5,0,2.4,0.2,2.4,1.8
+	c0,0.1,0,0.2,0.1,0.2h0.4c0.1,0,0.1,0,0.2-0.1c0.1-0.8,0.8-3.5,1.1-4.3c0,0,0-0.1-0.1-0.1l-0.4-0.1c-0.1,0-0.1,0-0.2,0.1
+	c-0.8,1.7-1.6,1.8-2.5,1.8h-1.8l1.8-5.6h3.3c0.1,0,0.3,0,0.4,0.2l2.2,2.5C28.4,4,28.5,4.1,28.6,4l0.3-0.1C29,3.8,29,3.8,29,3.7
+	l-0.6-2.9c-0.1-0.3-0.1-0.4-0.5-0.4c-0.2,0-0.8,0-1.6,0c-0.9,0-2,0-3.6,0h-1.6c-0.5,0-1.2,0-1.8,0c-0.6,0-1.1,0-1.2,0
+	c-0.2,0-0.2,0-0.3,0.2l-0.1,0.5c0,0.1,0,0.2,0.1,0.2h0.7c0.6,0,1.4,0.3,1.1,1.5L16.3,13c-0.2,0.7-0.6,1.1-1.5,1.1h-0.7
+	c-0.1,0-0.1,0-0.2,0.1l-0.1,0.6c0,0.1,0,0.2,0.1,0.2s0.5,0,0.9,0c0.5,0,1.1,0,1.8,0h2.8c1.5,0,3,0,4.2,0c1.2,0,2.1,0,2.3,0
+	c0.3,0,0.4,0,0.5-0.4l1.1-3.1c0-0.2,0-0.2,0-0.2L27.2,11z M43.5,6.4c0-3.9-2.4-6.3-5.8-6.3c-4.5,0-7.8,4.2-7.8,8.7
+	c0,1.9,0.6,3.6,1.9,4.9c1.3,1.3,3,1.4,3.9,1.4C40.5,15.2,43.5,10.7,43.5,6.4z M35.1,2.8c0.8-0.9,1.8-1.6,3.1-1.6c1.9,0,3,1.4,3,3.6
+	c0,4.6-2.8,9.4-6,9.4c-1.8,0-3.2-1.2-3.2-3.9C32.1,7.9,33.3,4.8,35.1,2.8z M48.9,7.9c0.6,0,1.5-0.1,2,1.1c0.3,0.5,2.1,4.7,2.4,5.2
+	c0.3,0.5,0.4,0.7,0.6,0.7c0.3,0,0.7-0.1,2-0.1c1.2,0,1.5,0.1,1.7,0.1c0.1,0,0.2-0.1,0.2-0.2v-0.4c0-0.1,0-0.2-0.1-0.2h-0.6
+	c-0.8,0-1.3-0.3-1.9-1.2c-0.4-0.6-1.8-3.6-2-3.8C53,8.7,52.6,8,52,7.9V7.8c2.8-0.3,5.1-2,5.1-4.1c0-3-3.2-3.1-5.1-3.1
+	c-0.6,0-2.8,0.1-5.1,0.1c-0.2,0-0.3,0-0.3,0.2l-0.1,0.5c0,0.1,0,0.2,0.2,0.2h0.7c0.7,0,0.9,0.4,0.6,1.1l-3.4,10.7
+	c-0.2,0.5-0.6,1-1.1,1h-0.6c-0.2,0-0.2,0-0.2,0.2l-0.1,0.5c0,0.1,0,0.2,0.1,0.2c0.3,0,1.1-0.1,2.6-0.1c1.8,0,2.8,0.1,3,0.1
+	c0.1,0,0.2,0,0.3-0.2v-0.5c0-0.1,0-0.2-0.1-0.2h-0.9c-0.6,0-0.8-0.4-0.5-1.5L48.9,7.9z M51.1,1.2c0.3,0,0.5,0,0.9,0
+	c2.1,0,2.7,1.4,2.7,2.3c0,1.5-1,2.7-2.1,3.2c-1.5,0.6-2.6,0.5-3.4,0.5L51.1,1.2z M71.1,10.9c0.3-1.1,0.6-1.3,1-1.3h0.5
+	c0.1,0,0.2,0,0.2-0.2l0.1-0.5c0-0.1,0-0.2-0.2-0.2c-0.3,0-0.8,0.1-2.3,0.1c-1.9,0-2.6-0.1-3-0.1c-0.2,0-0.2,0-0.2,0.2l-0.1,0.5
+	c0,0.2,0,0.2,0.2,0.2h0.8c0.6,0,0.8,0.2,0.8,1c-0.1,1.3-1.3,3.5-3.9,3.5c-0.9,0-3.1-0.6-3.1-4.1c0-2.6,0.7-4.9,2-6.5
+	c1.5-2,3-2.4,4.4-2.4c2.8,0,3.8,2.3,3.5,4.1c0,0.1,0,0.2,0.1,0.2h0.3c0.1,0,0.2,0,0.2-0.1L73.5,1c0-0.1,0-0.2-0.1-0.2l-0.3-0.1
+	c-0.1,0-0.2,0-0.2,0.1c-0.1,0.5-0.3,0.7-0.5,0.7c-0.1,0-0.3,0-0.6-0.3c-0.4-0.3-1.6-1.1-3.8-1.1c-3,0-4.8,1.3-6,2.5
+	c-1.6,1.6-2.9,3.9-2.9,6.7c0,3.7,2,5.8,5,5.8c2.9,0,4.1-1.7,4.4-2.1h0.1c-0.8,3-1.2,4.7-1.4,5.7c-0.4,1.5-1,2.4-2.1,2.4
+	c-0.5,0-0.9-0.2-0.9-0.7c0-0.2,0-0.3,0.1-0.4s0.2-0.5,0.2-0.7s-0.1-0.9-0.9-0.9s-1.2,0.6-1.2,1.3c0,1,0.8,2,2.8,2
+	c1.6,0,3.2-1.4,3.7-2.6c0.3-0.6,0.7-1.8,0.9-2.6L71.1,10.9z M86.2,11c-0.1-0.1-0.2,0-0.3,0c-0.3,0.4-1.5,1.8-2,2.2
+	C83.3,13.7,82.7,14,82,14h-4.8l2.1-6.5h1.1c1.5,0,2.4,0.2,2.4,1.8c0,0.1,0,0.2,0.1,0.2h0.4c0.1,0,0.1,0,0.2-0.1
+	c0.1-0.8,0.8-3.5,1.1-4.3c0,0,0-0.1-0.1-0.1l-0.4-0.1c-0.1,0-0.1,0-0.2,0.1c-0.8,1.7-1.6,1.8-2.5,1.8h-1.8l1.8-5.6h3.3
+	c0.1,0,0.3,0,0.4,0.2l2.2,2.5C87.4,4,87.5,4.1,87.6,4l0.3-0.1C88,3.8,88,3.8,88,3.7l-0.6-2.9c-0.1-0.3-0.1-0.4-0.5-0.4
+	c-0.2,0-0.8,0-1.6,0c-0.9,0-2,0-3.6,0h-1.6c-0.5,0-1.2,0-1.8,0c-0.6,0-1.1,0-1.2,0c-0.2,0-0.2,0-0.3,0.2l-0.1,0.5
+	c0,0.1,0,0.2,0.1,0.2h0.7c0.6,0,1.4,0.3,1.1,1.5L75.3,13c-0.2,0.7-0.6,1.1-1.5,1.1h-0.7c-0.1,0-0.1,0-0.2,0.1l-0.1,0.6
+	c0,0.1,0,0.2,0.1,0.2s0.5,0,0.9,0c0.5,0,1.1,0,1.8,0h2.8c1.5,0,3,0,4.2,0s2.1,0,2.3,0c0.3,0,0.4,0,0.5-0.4l1.1-3.1
+	c0-0.2,0-0.2,0-0.2L86.2,11z M94.4,0.5c-2.2,0-3.3-0.2-3.7-0.3C90.5,0.1,90.5,0,90.4,0s-0.2,0.1-0.2,0.2c0,0.1-1.4,3.1-1.6,3.6
+	c0,0.1,0,0.2,0,0.2l0.3,0.2c0.1,0,0.2,0,0.3-0.1c0.5-0.6,1.6-1.8,2.4-2.4C92.1,1.3,93,1.2,95,1.2h0.6l-3.3,10.6
+	c-0.5,1.6-0.9,2.2-2.1,2.2h-0.6c-0.2,0-0.2,0-0.3,0.2v0.5c0,0.1,0,0.2,0.2,0.2s1.4-0.1,3.5-0.1c2,0,2.9,0.1,3.2,0.1
+	c0.2,0,0.2-0.1,0.3-0.2l0.1-0.4c0-0.1,0-0.2-0.1-0.2h-0.9c-1.1,0-1.3-0.5-0.9-1.8l3.4-10.9h0.4c1,0,2.5,0.2,3,0.6
+	c0.3,0.6,0.7,1.9,0.9,2.6c0.1,0.3,0.2,0.3,0.3,0.3l0.3-0.1c0.1,0,0.2-0.1,0.2-0.2c0-0.9,0.2-4,0.2-4.3c0-0.1-0.1-0.2-0.2-0.2
+	s-0.1,0-0.2,0.1c-0.4,0.2-1.2,0.4-3.1,0.4h-5.5V0.5z M116.6,6.4c0-3.9-2.4-6.3-5.8-6.3c-4.5,0-7.8,4.2-7.8,8.7
+	c0,1.9,0.6,3.6,1.9,4.9s3,1.4,3.9,1.4C113.6,15.2,116.6,10.7,116.6,6.4z M108.2,2.8c0.8-0.9,1.8-1.6,3.1-1.6c1.9,0,3,1.4,3,3.6
+	c0,4.6-2.8,9.4-6,9.4c-1.8,0-3.2-1.2-3.2-3.9C105.1,7.9,106.4,4.8,108.2,2.8z M122.9,2.4c0.2-0.9,0.5-1.1,1.1-1.1h0.3
+	c0.2,0,0.2-0.1,0.2-0.2l0.1-0.5c0-0.1,0-0.2-0.2-0.2c-0.3,0-1.1,0.1-2.4,0.1c-1.4,0-2.3-0.1-2.5-0.1s-0.2,0-0.3,0.2l-0.1,0.5
+	c0,0.2,0,0.2,0.2,0.2h0.5c0.5,0,0.6,0.4,0.5,1.1l-1.5,12c-0.1,0.6,0,0.9,0.3,0.9s0.6-0.3,0.8-0.6c0.8-0.9,6.6-9,6.8-9.3
+	c0.2-0.2,0.3-0.2,0.3,0l-0.6,9c0,0.5,0,0.8,0.4,0.8s0.6-0.3,0.9-0.7c0.9-1.1,3.7-5.3,4.3-6.3c0.5-0.9,3.7-6.2,3.9-6.5
+	c0.3-0.5,0.7-0.6,1.1-0.6h0.4c0.1,0,0.1,0,0.2-0.2l0.1-0.5c0-0.1,0-0.2-0.2-0.2c-0.3,0-0.9,0.1-2.1,0.1c-1.1,0-1.6-0.1-1.9-0.1
+	c-0.1,0-0.2,0-0.2,0.2l-0.1,0.5c0,0.2,0,0.2,0.2,0.2h0.3c0.6,0,0.7,0.6,0.5,1.1c-0.1,0.8-1.1,2.8-2.1,4.5c-0.4,0.7-2.5,4.2-3,4.7
+	c-0.2,0.3-0.3,0.2-0.3-0.2l1.1-8.9c0.1-0.8,0.3-1,0.7-1h0.3c0.2,0,0.2,0,0.3-0.2l0.1-0.5c0-0.1,0-0.2-0.2-0.2
+	c-0.3,0-0.8,0.1-2.1,0.1c-1.3,0-1.9-0.1-2.1-0.1s-0.2,0-0.3,0.1l-0.1,0.6c0,0.1,0,0.2,0.2,0.2h0.3c0.4,0,0.6,0.3,0.6,0.7
+	c0,0.5-0.3,1.3-0.8,2.1c-0.1,0.1-4.8,7-5,7.1c-0.2,0.3-0.4,0.2-0.3-0.1L122.9,2.4z M133.5,12.7c0,1.8,1.5,2.7,3,2.7
+	c3.1,0,5.1-2.4,6.2-4.4c1.1-1.9,2-4.7,2.5-7.4c0.1-0.3,0.2-0.3,0.2-0.1c1.1,4.2,3,9,5.4,12.2c1.3,1.7,4.1,5.1,8.4,5.1
+	c2.5,0,3.6-1.2,4-1.6s0.6-1.1,0.6-1.3c0-0.3-0.2-0.7-0.6-0.7c-0.4,0-0.7,0.4-0.9,1.4c-0.2,0.7-0.9,1.2-2,1.2c-3.7,0-6.9-4-8-5.8
+	c-0.2-0.4-0.6-0.8-0.2-2.4c1.4-6.2,3-8.4,4.5-9.5c0.7-0.5,1.1-0.6,1.5-0.6c0.3,0,0.7,0.2,0.8,0.5c0.2,0.3,0.5,0.6,0.9,0.6
+	c0.5,0,1.1-0.5,1.1-1.1c0-0.7-0.6-1.5-1.9-1.5c-0.9,0-1.9,0.2-3,1.1c-2.4,1.8-3.8,6-4.7,10.2c-0.1,0.4-0.2,0.6-0.3,0.3
+	c-1.2-1.9-3.2-7.4-3.9-10.6c-0.1-0.3-0.2-0.5-0.6-0.5c-3.9,0-6-0.2-7.6,0.9c-1,0.7-1.5,1.9-1.5,3c0,1,0.6,1.8,1.4,1.8
+	c0.7,0,1.1-0.5,1.1-0.9s-0.3-0.9-1-1c-0.5-0.1-0.6-0.6-0.6-0.9c0-0.5,0.8-1.1,1.7-1.4c1.2-0.4,2.4-0.4,3.8-0.4
+	c0.5,0,0.7,0.2,0.7,0.6c0,2.1-1.7,6.8-3.2,8.9c-0.9,1.3-2.7,2.9-4.7,2.9c-1.2,0-1.5-0.5-1.4-0.9c0.1-0.5,0.7-0.8,0.7-1.4
+	c0-0.7-0.5-1-1.1-1C134.3,11,133.5,11.6,133.5,12.7z M195.7,14.4c0.1,0.3,0.3,0.4,0.6,0.4c0.1,0,0.3-0.2,0.4-0.6l3.9-11.3
+	c0.4-1.2,0.9-1.7,1.4-1.7h0.6c0.1,0,0.2,0,0.2-0.2l0.1-0.4c0-0.2,0-0.3-0.2-0.3c-0.3,0-0.7,0.1-1.8,0.1c-1.5,0-2.2-0.1-2.4-0.1
+	c-0.1,0-0.2,0.1-0.2,0.2V1c0,0.2,0,0.2,0.2,0.2h0.6c0.7,0,0.9,0.7,0.3,2.4l-2.3,6.9c-0.2,0.5-0.3,0.6-0.4,0.3l-4.8-9.9
+	c-0.1-0.3-0.3-0.6-0.6-0.6c-2.5,0-3.4-0.1-3.6-0.1c-0.2,0-0.2,0.1-0.3,0.2L187.1,1c0,0.2,0,0.3,0.2,0.3h0.8c0.9,0,1.4,0.6,0.9,1.9
+	l-2.6,8.3c-0.6,1.9-1.2,2.6-2.1,2.6h-0.5c-0.1,0-0.2,0.1-0.2,0.2l-0.1,0.5c0,0.2,0,0.2,0.1,0.2c0.3,0,0.9-0.1,2.4-0.1
+	s2.4,0.1,2.6,0.1c0.2,0,0.2,0,0.3-0.2l0.1-0.5c0-0.1,0-0.2-0.2-0.2H188c-0.9,0-1-1-0.3-3.5l2.1-7.2c0-0.3,0.2-0.3,0.3,0L195.7,14.4z
+	 M202.8,12.5c-0.3,1.1-0.4,1.5-1.7,1.5h-0.8c-0.1,0-0.2,0-0.2,0.2l-0.1,0.5c0,0.1,0,0.2,0.2,0.2c0.3,0,1.4-0.1,3.2-0.1
+	c2.2,0,3.2,0.1,3.4,0.1s0.2,0,0.3-0.2v-0.4c0-0.1,0-0.2-0.1-0.2h-0.8c-0.9,0-1.2-0.4-0.9-1.5l2.7-9.9c0.3-1.2,0.8-1.4,1.7-1.4h0.6
+	c0.2,0,0.2-0.1,0.2-0.2l0.1-0.4c0-0.2,0-0.3-0.3-0.3s-1.2,0.1-3,0.1c-1.7,0-2.9-0.1-3.1-0.1c-0.2,0-0.3,0-0.3,0.1l-0.1,0.6
+	c0,0.1,0,0.2,0.2,0.2h1c0.6,0,0.9,0.3,0.6,1.4L202.8,12.5z M214.3,11c-0.3,0.4-0.6,0.3-0.5-0.2l1.5-8.6c0.1-0.6,0.5-0.9,1.2-0.9h0.6
+	c0.2,0,0.2,0,0.2-0.2l0.1-0.5c0-0.2,0-0.2-0.2-0.2c-0.3,0-1.2,0.1-2.7,0.1c-1.8,0-2.7-0.1-3-0.1c-0.2,0-0.2,0-0.2,0.2l-0.2,0.5
+	c0,0.2,0,0.2,0.2,0.2h0.7c0.7,0,0.9,0.5,0.8,1.2l-1.7,12c-0.1,0.5,0,0.8,0.3,0.8s0.6-0.2,0.7-0.4l9.2-11.5c0.8-1.1,1.9-2.1,2.7-2.1
+	h0.5c0.1,0,0.2-0.1,0.2-0.2l0.1-0.5c0-0.1,0-0.2-0.2-0.2c-0.3,0-0.8,0.1-2.1,0.1c-1.2,0-1.9-0.1-2.2-0.1c-0.2,0-0.3,0-0.3,0.2
+	l-0.1,0.5c0,0.1,0,0.2,0.2,0.2h0.4c0.6,0,0.5,0.8-0.3,1.8L214.3,11z M234.6,11c-0.1-0.1-0.2,0-0.3,0c-0.3,0.4-1.5,1.8-2,2.2
+	c-0.6,0.5-1.2,0.8-1.9,0.8h-4.8l2.1-6.5h1.1c1.5,0,2.4,0.2,2.4,1.8c0,0.1,0,0.2,0.1,0.2h0.4c0.1,0,0.1,0,0.2-0.1
+	c0.1-0.8,0.8-3.5,1.1-4.3c0,0,0-0.1-0.1-0.1l-0.4-0.1c-0.1,0-0.1,0-0.2,0.1c-0.8,1.7-1.6,1.8-2.5,1.8H228l1.8-5.6h3.3
+	c0.1,0,0.3,0,0.4,0.2l2.2,2.5c0.1,0.1,0.2,0.2,0.3,0.1l0.3-0.1c0.1-0.1,0.1-0.1,0.1-0.2l-0.6-2.9c-0.1-0.3-0.1-0.4-0.5-0.4
+	c-0.2,0-0.8,0-1.6,0c-0.9,0-2,0-3.6,0h-1.5c-0.5,0-1.2,0-1.8,0s-1.1,0-1.2,0c-0.2,0-0.2,0-0.3,0.2l-0.1,0.5c0,0.1,0,0.2,0.1,0.2h0.7
+	c0.6,0,1.4,0.3,1.1,1.5L223.8,13c-0.2,0.7-0.6,1.1-1.5,1.1h-0.7c-0.1,0-0.1,0-0.2,0.1l-0.1,0.6c0,0.1,0,0.2,0.1,0.2s0.5,0,0.9,0
+	c0.5,0,1.1,0,1.8,0h2.8c1.5,0,3,0,4.2,0s2.1,0,2.3,0c0.3,0,0.4,0,0.5-0.4l1.1-3.1c0-0.2,0-0.2,0-0.2L234.6,11z M241.3,7.9
+	c0.6,0,1.5-0.1,2,1.1c0.3,0.5,2.1,4.7,2.4,5.2c0.3,0.5,0.4,0.7,0.6,0.7c0.3,0,0.7-0.1,2-0.1c1.2,0,1.5,0.1,1.7,0.1
+	c0.1,0,0.2-0.1,0.2-0.2v-0.4c0-0.1,0-0.2-0.1-0.2h-0.6c-0.8,0-1.3-0.3-1.9-1.2c-0.4-0.6-1.8-3.6-2-3.8c-0.2-0.4-0.6-1.1-1.2-1.2V7.8
+	c2.8-0.3,5.1-2,5.1-4.1c0-3-3.2-3.1-5.1-3.1c-0.6,0-2.8,0.1-5.1,0.1c-0.2,0-0.3,0-0.3,0.2l0.1,0.2c0,0.1,0,0.2,0.2,0.2h0.7
+	c0.7,0,0.9,0.4,0.6,1.1l-3.4,10.7c-0.2,0.5-0.6,1-1.1,1h-0.6c-0.2,0-0.2,0-0.2,0.2l-0.1,0.5c0,0.1,0,0.2,0.1,0.2
+	c0.3,0,1.1-0.1,2.6-0.1c1.8,0,2.8,0.1,3,0.1c0.1,0,0.2,0,0.3-0.2v-0.5c0-0.1,0-0.2-0.1-0.2h-0.9c-0.6,0-0.8-0.4-0.5-1.5L241.3,7.9z
+	 M243.4,1.2c0.3,0,0.5,0,0.9,0c2.1,0,2.7,1.4,2.7,2.3c0,1.5-1,2.7-2.1,3.2c-1.5,0.6-2.6,0.5-3.4,0.5L243.4,1.2z M261.7,0.6
+	c0-0.1,0-0.1-0.2-0.1h-0.3c-0.2,0-0.2,0-0.2,0.1c-0.1,0.4-0.2,0.7-0.3,0.7c-0.1,0-0.2,0-0.3-0.1c-0.3-0.3-1.4-1-2.5-1
+	c-2.8,0-4,2.2-4,3.8c0,2.2,1.1,3.3,2.4,4.8c0.9,1,2,1.8,2,3.2c0,1.2-0.9,2.3-2.3,2.3c-1.3,0-3-1.5-2.4-4.5c0-0.1,0-0.2-0.1-0.2
+	l-0.3-0.1c-0.1,0-0.2,0-0.2,0.1l-1.6,4.7c0,0.2,0,0.2,0.1,0.2l0.3,0.1c0.1,0,0.2,0,0.2-0.1c0.2-0.3,0.4-0.6,0.5-0.8
+	c0.1-0.1,0.3-0.2,0.6,0c0.7,0.8,1.7,1.6,3,1.6c2.2,0,4.2-1.5,4.2-4.2c0-2.4-1.4-3.6-2.4-4.6S256,4.8,256,3.3c0-0.9,0.7-2.1,1.9-2.1
+	c2.2,0,2.4,2.6,2.3,3.4c0,0.1,0,0.2,0.2,0.2h0.4c0.1,0,0.1,0,0.2-0.1L261.7,0.6z M263.5,12.5c-0.3,1.1-0.4,1.5-1.7,1.5H261
+	c-0.1,0-0.2,0-0.2,0.2l-0.1,0.5c0,0.1,0,0.2,0.2,0.2c0.3,0,1.4-0.1,3.2-0.1c2.2,0,3.2,0.1,3.4,0.1c0.2,0,0.2,0,0.3-0.2v-0.4
+	c0-0.1,0-0.2-0.1-0.2h-0.8c-0.9,0-1.2-0.4-0.9-1.5l2.7-9.9c0.3-1.2,0.8-1.4,1.7-1.4h0.6c0.2,0,0.2-0.1,0.2-0.2l0.1-0.4
+	c0-0.2,0-0.3-0.3-0.3s-1.2,0.1-3,0.1c-1.7,0-2.9-0.1-3.1-0.1s-0.3,0-0.3,0.1l-0.1,0.6c0,0.1,0,0.2,0.2,0.2h1c0.6,0,0.9,0.3,0.6,1.4
+	L263.5,12.5z M276.9,0.5c-2.2,0-3.3-0.2-3.7-0.3C273,0.1,272.9,0,272.9,0c-0.1,0-0.2,0.1-0.2,0.2c0,0.1-1.4,3.1-1.6,3.6
+	c0,0.1,0,0.2,0,0.2l0.3,0.2c0.1,0,0.2,0,0.3-0.1c0.5-0.6,1.6-1.8,2.4-2.4c0.5-0.4,1.4-0.5,3.4-0.5h0.6l-3.3,10.6
+	c-0.5,1.6-0.9,2.2-2.1,2.2h-0.6c-0.2,0-0.2,0-0.3,0.2v0.5c0,0.1,0,0.2,0.2,0.2s1.4-0.1,3.5-0.1c2,0,2.9,0.1,3.2,0.1
+	c0.2,0,0.2-0.1,0.3-0.2l0.1-0.4c0-0.1,0-0.2-0.1-0.2h-0.9c-1.1,0-1.3-0.5-0.9-1.8l3.4-10.9h0.4c1,0,2.5,0.2,3,0.6
+	c0.3,0.6,0.7,1.9,0.9,2.6c0.1,0.3,0.2,0.3,0.3,0.3l0.3-0.1c0.1,0,0.2-0.1,0.2-0.2c0-0.9,0.2-4,0.2-4.3c0-0.1-0.1-0.2-0.2-0.2
+	s-0.1,0-0.2,0.1c-0.4,0.2-1.2,0.4-3.1,0.4h-5.5V0.5z M292.6,10.5c0.2-0.9,0.4-1.4,0.7-1.8c0.3-0.5,4.2-6,4.5-6.4
+	c0.4-0.6,0.9-0.9,1.6-0.9h0.4c0.1,0,0.2,0,0.2-0.2l0.1-0.4c0-0.1,0-0.2-0.2-0.2c-0.3,0-0.9,0.1-2.3,0.1c-1.2,0-2-0.1-2.3-0.1
+	c-0.2,0-0.3,0-0.3,0.2v0.5c0,0.1,0,0.2,0.1,0.2h0.5c0.7,0,1,0.3,0.7,1.1c-0.2,0.6-3.3,5.1-3.6,5.6c-0.2,0.3-0.3,0.3-0.4,0l-1.7-5.8
+	c-0.1-0.4-0.1-0.9,0.6-0.9h0.6c0.1,0,0.2,0,0.2-0.2V0.8c0-0.1,0-0.2-0.2-0.2c-0.3,0-1,0.1-2.8,0.1c-1.7,0-2.3-0.1-2.6-0.1
+	c-0.1,0-0.2,0-0.2,0.2l-0.1,0.3c0,0.1,0,0.2,0.2,0.2h0.5c0.7,0,1.2,0.3,1.3,0.8l2.2,6.6c0.1,0.3,0.1,0.8,0,1.1l-0.7,3.2
+	c-0.1,0.6-0.4,1.1-1.4,1.1h-0.5c-0.2,0-0.2,0.1-0.2,0.2l-0.1,0.5c0,0.2,0,0.2,0.2,0.2c0.3,0,0.9-0.1,2.8-0.1c1.7,0,2.4,0.1,2.7,0.1
+	c0.2,0,0.2-0.1,0.2-0.2l0.1-0.5c0-0.1,0-0.2-0.2-0.2h-0.5c-0.7,0-1-0.1-0.8-1.2L292.6,10.5z M172.8,3.3c0,0-5.2,4.2-3.5,9.5
+	c0,0,1.2,3.8,5.9,2.2c0,0,1.3-0.6,2.1-1.4s0.7,0,0.9,0.5c0.2,0.3,0.6,1.4,2.1,1.3s2.7-1.8,2.3-2.3c-0.3-0.4-0.8,0.5-1.1,0.8
+	c-0.4,0.2-1.2,0.3-1.4-0.8c-0.2-1.1,2.3-7.6,2.3-7.6s0.7-1.9,1.6-3.3c0.5-0.8,1-0.9,1.5-1.1c1.5-0.4,0.6-0.9,0.1-0.9
+	c-0.4,0-2.4-0.3-3.2,0.8s-4.3,10.1-4.3,10.1s-1.6,3.3-4.7,2.3c-3.1-1-2-5.3-1.5-6.4c0.3-0.6,1.8-3.3,3.7-5.7
+	c1.3-1.6-0.1-0.8-1.6-0.9c-1.5-0.1-5.1-0.9-6.6,0.2c-1.7,1.3-2.2,3.4-0.7,4.4s2.4-0.8,1.8-1.5c-0.6-0.7-0.7,0-1.5-0.1
+	c-0.6-0.1-0.5-1.6,1-1.8s3.7,0.3,5,0.3C174.3,2,172.8,3.3,172.8,3.3z"></path>
+</svg>
+                    </a>
+                  </div>
+                
+                
+                                <div class="nav-container">
+                  <div class="cc--component-container cc--sfs-secondary-menu">
+                    <div class="c--component c--sfs-secondary-menu">
+                                              <nav aria-label="Secondary">
+                          
+    <ul>
+          <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-21290 ">
+        
+<div class="menu-item-container">
+    
+        <a href="https://gradapply.georgetown.edu/apply/#_ga=2.21677308.696313303.1611239671-682498265.1576267401#new_tab" target="_blank" class="menu-item-text">Apply Now</a>
+
+        
+      </div>
+
+                        
+      </li>
+          <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-3537 menu-item-has-children has-children">
+        
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/careers-with-impact/" target="" class="menu-item-text">Careers with Impact</a>
+
+              <button aria-label="Expand Sub-Navigation" class="toggle"></button>
+    
+      </div>
+
+                          <div class="submenu" aria-hidden="true">
+            <ul>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-7492 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/careers-with-impact/careers-in-policy/" target="" class="menu-item-text">Careers in Policy</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-7488 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/careers-with-impact/employment-outcomes/" target="" class="menu-item-text">Employment Outcomes</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-7490 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/careers-with-impact/resources-for-students/" target="" class="menu-item-text">Resources for Students</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-7484 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/careers-with-impact/resources-for-alumni/" target="" class="menu-item-text">Resources for Alumni</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-7482 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/careers-with-impact/resources-for-employers/" target="" class="menu-item-text">Resources for Employers</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-7481 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/careers-with-impact/career-development-team/" target="" class="menu-item-text">Career Development Team</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                          </ul>
+          </div>
+                
+      </li>
+          <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-92 menu-item-has-children has-children">
+        
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/about-us/" target="" class="menu-item-text">About Us</a>
+
+              <button aria-label="Expand Sub-Navigation" class="toggle"></button>
+    
+      </div>
+
+                          <div class="submenu" aria-hidden="true">
+            <ul>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-5863 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/about-us/mission/" target="" class="menu-item-text">Our Mission</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-19215 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/about-us/a-letter-from-our-dean/" target="" class="menu-item-text">A Letter from our Dean</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-5864 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/about-us/history/" target="" class="menu-item-text">Our History</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-5865 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/about-us/our-donor/" target="" class="menu-item-text">Our Founding Donor</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-18725 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/about-us/confronting-racism/" target="" class="menu-item-text">Confronting Racism Initiative</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                          </ul>
+          </div>
+                
+      </li>
+          <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-4522 menu-item-has-children has-children">
+        
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/news/" target="" class="menu-item-text">News</a>
+
+              <button aria-label="Expand Sub-Navigation" class="toggle"></button>
+    
+      </div>
+
+                          <div class="submenu" aria-hidden="true">
+            <ul>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-4564 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/news/policy-perspectives/" target="" class="menu-item-text">Policy Perspectives</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-4563 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/news/the-policy-memo/" target="" class="menu-item-text">The Policy Memo</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-19663 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/mccourt-impacts/" target="" class="menu-item-text">McCourt Impacts</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                          </ul>
+          </div>
+                
+      </li>
+          <li class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-93 menu-item-has-children has-children">
+        
+<div class="menu-item-container">
+    
+        <a href="https://giving.georgetown.edu/what-to-support/schools-programs/mccourt-school-of-public-policy/" target="" class="menu-item-text">Giving</a>
+
+              <button aria-label="Expand Sub-Navigation" class="toggle"></button>
+    
+      </div>
+
+                          <div class="submenu" aria-hidden="true">
+            <ul>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-7491 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/support-funds/" target="" class="menu-item-text">Support Funds</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                          </ul>
+          </div>
+                
+      </li>
+      </ul>
+  
+                        </nav>
+                                          </div>
+                  </div>
+
+                      
+
+
+<div
+        class="f--field f--search-button"
+                >
+
+    
+      <button class="open-search" aria-haspopup="true">
+    Open Search Form
+  </button>
+
+</div><!-- f--field f--search-button -->
+                </div>
+
+              </div>
+            </div>
+
+            <div class="header-bottom">
+              <div class="header-bottom-inner">
+                
+
+  <div class="f--field f--sfs-logo">
+    <a href="https://mccourt.georgetown.edu" class="sfs-logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 282.05 83.4" role="presentation">
+  <title>McCourt School of Public Policy</title>
+  <g>
+    <path d="M2.3,2.83H12.7l5,24.5h.1l5-24.5H33.13V37.54H26.71V9.83h-.1L20.44,37.54H15L8.82,9.83h-.1V37.54H2.3V2.83Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M48.81,20.82c0-2.53-.49-5.25-3-5.25-3.31,0-3.84,2.92-3.84,9,0,6.47.63,9.14,3.6,9.14,2.29,0,3.26-1.85,3.26-6.13h6.42c0,6.85-2.82,10.7-10,10.7-6.71,0-10-3.26-10-13.76,0-10.75,4.38-13.76,10.6-13.76s9.38,3.89,9.38,10.11Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M72.91,14.54c0-5.06-1-7.24-4.18-7.24-3.5,0-4.38,3.5-4.38,13.37,0,10.5,1.46,12.4,4.47,12.4,2.48,0,4.38-1.26,4.38-8.8h7c0,7.54-1.85,14-11,14-10.5,0-11.81-7.49-11.81-18s1.31-18,11.81-18c10,0,10.74,7.34,10.74,12.4Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M92.67,10.7c8-.15,10.31,4.62,10.31,13.76,0,8.95-2.67,13.76-10.31,13.76-8,.15-10.31-4.62-10.31-13.76C82.36,15.52,85,10.7,92.67,10.7Zm0,23c2.72,0,3.6-2.63,3.6-9.19s-.87-9.19-3.6-9.19c-3.31,0-3.6,3.84-3.6,9.19S89.36,33.65,92.67,33.65Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M118.51,34.48h-.1a7.12,7.12,0,0,1-6.66,3.74c-4.23,0-6.66-2.24-6.66-7.44V11.38h6.71v18c0,2.67.87,3.65,2.87,3.65,2.38,0,3.55-1.46,3.55-4.33V11.38h6.71V37.54h-6.42V34.48Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M127.05,11.38h6.42v3.5h.1c1.36-2.53,3.26-4.18,6-4.18a10,10,0,0,1,1.22.1v6.42c-.73,0-1.36-.1-2.09-.1-2.33,0-5,1.22-5,4.72v15.7h-6.71V11.38Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M140.81,3.9h6.71v7.49h3.89V16h-3.89V30.11c0,2.09.44,2.87,2.38,2.87a13.66,13.66,0,0,0,1.51-.1v4.67a42,42,0,0,1-4.38.29c-5.25,0-6.22-1.65-6.22-6.9V3.9Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M169.9,26.7v1c0,3.26.92,5.35,4.62,5.35a4,4,0,0,0,4.18-4.28c0-3.11-1.56-4.38-6.22-5.93-6.22-2.09-9.09-4.76-9.09-10.5,0-6.81,4.08-10.21,10.75-10.21,6.22,0,10.74,2.67,10.74,9.33v1h-6.71c0-3.31-1.07-5.15-3.79-5.15-3.16,0-4,2-4,4s.63,3.5,3.6,4.71l5.4,2.33c5.25,2.33,6.61,4.91,6.61,9.19,0,7.34-4.47,10.65-12.06,10.65-7.92,0-11-3.7-11-10.11V26.7Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M201.68,20.82c0-2.53-.49-5.25-3-5.25-3.31,0-3.84,2.92-3.84,9,0,6.47.63,9.14,3.6,9.14,2.29,0,3.26-1.85,3.26-6.13h6.42c0,6.85-2.82,10.7-10,10.7-6.71,0-10-3.26-10-13.76,0-10.75,4.38-13.76,10.6-13.76s9.38,3.89,9.38,10.11Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M210.22,2.83h6.71V14.06h.1c1.31-2.29,3.5-3.36,6.37-3.36,4.23,0,6.66,2.24,6.66,7.44v19.4h-6.71v-18c0-2.67-.88-3.65-2.87-3.65-2.38,0-3.55,1.46-3.55,4.33V37.54h-6.71V2.83Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M242.48,10.64c8-.15,10.31,4.62,10.31,13.76,0,9-2.67,13.76-10.31,13.76-8,.15-10.31-4.62-10.31-13.76C232.17,15.45,234.85,10.64,242.48,10.64Zm0,23c2.72,0,3.6-2.63,3.6-9.19s-.87-9.19-3.6-9.19c-3.31,0-3.6,3.84-3.6,9.19S239.17,33.59,242.48,33.59Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M265.21,10.77c8-.15,10.31,4.62,10.31,13.76,0,8.95-2.67,13.76-10.31,13.76-8,.15-10.31-4.62-10.31-13.76C254.91,15.58,257.58,10.77,265.21,10.77Zm0,23c2.72,0,3.6-2.63,3.6-9.19s-.88-9.19-3.6-9.19c-3.31,0-3.6,3.84-3.6,9.19S261.91,33.72,265.21,33.72Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M277.64,2.83h6.71V37.54h-6.71Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M2.44,69.74a12.27,12.27,0,0,1,3.13-8.39A6.88,6.88,0,0,1,10.86,59a4.42,4.42,0,0,1,4.62,4.69,14.18,14.18,0,0,1-3.21,8.72A6.69,6.69,0,0,1,6.9,74.84C4.71,74.84,2.44,73.16,2.44,69.74Zm8.19-.38C12,67,13.16,63.92,13.16,62.58a1.58,1.58,0,0,0-1.6-1.68c-1.53,0-2.94,1.3-4.77,4.36a13,13,0,0,0-2,5.81,1.67,1.67,0,0,0,1.57,1.75C7.84,72.83,9.18,71.79,10.63,69.36Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M29.08,59.79c.22,0,.3.15.22.37l-.19,1c0,.22-.11.3-.41.3H25c-.82,2.91-2.46,9.32-4,13.64-2.05,5.63-5,10.47-9.39,10.47-1.94,0-3.13-1-3.13-2.31a1.7,1.7,0,0,1,1.71-1.79A1.9,1.9,0,0,1,12,83.38a.68.68,0,0,0,.75.6c1.71,0,3.5-3.13,5.29-10l3.35-12.6h-3.2c-.22,0-.3-.15-.26-.37l.19-.89c.07-.22.15-.37.45-.37H21.7c1.12-2.95,1.71-5.48,4.25-8.24A8.29,8.29,0,0,1,31.61,49c2.76,0,4,1.34,4,2.46a1.75,1.75,0,0,1-1.71,1.79,1.78,1.78,0,0,1-2-1.71,1.29,1.29,0,0,0-1.34-1.08c-2.91,0-4.1,5.4-5.22,9.39h3.8Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M43.14,70.44c-.37,1.42-.22,2.65,1.19,2.65h1.42c.3,0,.34.15.3.37l-.07.78c0,.26-.15.34-.45.34-.45,0-2-.11-5.29-.11-3.06,0-4.4.11-4.92.11-.22,0-.3-.15-.3-.37l.07-.75c.07-.22.15-.37.45-.37h.67c1.79,0,2.39-1.34,2.8-2.87l4.43-16.77c.34-1.23.45-2.57-1-2.57H40.76c-.22,0-.22-.15-.22-.37l.22-.78c.08-.22.15-.22.52-.22s7-.11,8.27-.11c4,0,5.81.26,7.6,1.75s2.24,2.53,2.24,5.07c0,4-3.21,8.12-10.81,8.12a14.12,14.12,0,0,1-3.73-.45Zm2.09-8a6.31,6.31,0,0,0,2.91.6c4.7,0,6.86-3.88,6.86-7.16,0-4.4-3.58-5.25-5.29-5.25a8.1,8.1,0,0,0-1.34.07Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M72.36,59.56c.08-.22.3-.22.52-.22h2.53c.37,0,.45.15.37.45l-2.61,7.6a40.51,40.51,0,0,0-1.49,4.7c0,.37.15.45.37.45.52,0,1.94-1.42,2.46-2.09.07-.15.22-.15.37,0l.45.34a.34.34,0,0,1,0,.37c-.37.6-3.06,3.73-6.19,3.73A1.08,1.08,0,0,1,68,73.73c0-.52,1.64-4.77,2-5.85l-.26-.15c-1.49,2.12-5.07,7.12-8.72,7.12a1.91,1.91,0,0,1-1.71-1.71c0-1.41.9-3.35,2.42-6.75a18.15,18.15,0,0,0,1.6-4.58.61.61,0,0,0-.67-.6c-.6,0-2,1.27-2.68,2a.24.24,0,0,1-.41,0l-.41-.37c-.07-.07-.07-.15,0-.3.6-.67,3-3.58,6.19-3.58a1.53,1.53,0,0,1,1.57,1.56c0,.9-.71,2.87-2.12,6.22a22.12,22.12,0,0,0-1.75,5,.59.59,0,0,0,.6.6c1.27,0,4.92-4.4,5.89-6a14.45,14.45,0,0,0,1.71-3.43Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M88.91,49.31c.37,0,.45.3.3.63l-6,13.49.3.07c1.71-2.39,4.1-4.55,6.78-4.55A2.81,2.81,0,0,1,93,62c0,1.9-1,5.55-4.47,9.13A10.92,10.92,0,0,1,80,74.83c-1.71,0-3-1-3-2.61A7.7,7.7,0,0,1,77.51,70c2.46-6.19,4.92-12.15,7.23-17.85a2.73,2.73,0,0,0,.22-.89c0-.37-.37-.6-.89-.6H83c-.22,0-.37-.08-.3-.3l.22-.75c.07-.22.15-.3.37-.3h5.67ZM83,65.82a16.53,16.53,0,0,0-2.53,6.26c0,.89.45,1.27,1.34,1.27,1,0,2.53-1,3.84-2.35a12.72,12.72,0,0,0,3.69-8.12c0-1.08-.52-1.68-1.12-1.68C87.12,61.2,84.89,63.06,83,65.82Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M100.47,52.93c.49-1.3.45-2.27-.67-2.27H98.61c-.15,0-.19-.11-.15-.3l.22-.86a.27.27,0,0,1,.3-.19h5.74c.34,0,.41.22.3.56L97.49,70.22c-.37,1-.75,2.23,0,2.23s2.24-1.41,2.68-1.94c.15-.07.22-.07.37.07L101,71c.07.15.15.22,0,.45s-3.35,3.43-6.63,3.43a1.33,1.33,0,0,1-1.27-1.34,23.47,23.47,0,0,1,1.19-3.73Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M108.37,69.7a8.28,8.28,0,0,0-.67,2.39c0,.3.15.52.45.52.75-.07,2.68-2.09,2.91-2.39.07-.15.22-.15.34,0l.41.41c.15.15.22.22.07.37-.22.3-2.83,3.87-6.89,3.87a1,1,0,0,1-1.08-1c0-.75.6-2.5,2.09-6.63l1-2.91a7.78,7.78,0,0,0,.6-2.16.4.4,0,0,0-.45-.45c-.6,0-2.31,1.94-2.83,2.53a.28.28,0,0,1-.45,0l-.37-.34c-.15-.11-.22-.19-.15-.34s3.58-4.55,6.86-4.55c.89,0,1.34.45,1.34,1.19A16,16,0,0,1,110.47,64ZM109,52.44a2.12,2.12,0,0,1,2.09-2,2,2,0,0,1,2.27,1.86,2.32,2.32,0,0,1-2.2,2.16A2,2,0,0,1,109,52.44Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M122.94,71.26c.15.07.22.15.07.37-.56.82-3,3.2-5.74,3.2a3.44,3.44,0,0,1-3.35-3.69C113.92,65.92,118,59,122.6,59A2.33,2.33,0,0,1,125.17,61a1.81,1.81,0,0,1-1.57,1.86,1.19,1.19,0,0,1-1.27-.89c-.22-.52-.56-1.12-1.16-1.12-.82,0-1.53.89-2.24,2.53A17.65,17.65,0,0,0,117.48,70c0,1.86.56,2.68,1.53,2.68A5.14,5.14,0,0,0,122.1,71c.07-.15.22-.22.3-.15Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M140.05,70.44c-.37,1.42-.22,2.65,1.19,2.65h1.42c.3,0,.34.15.3.37l-.08.78c0,.26-.15.34-.45.34-.45,0-2-.11-5.29-.11-3.06,0-4.4.11-4.92.11-.22,0-.3-.15-.3-.37l.07-.75c.07-.22.15-.37.45-.37h.67c1.79,0,2.39-1.34,2.8-2.87l4.43-16.77c.34-1.23.45-2.57-1-2.57h-1.71c-.22,0-.22-.15-.22-.37l.22-.78c.08-.22.15-.22.52-.22s7-.11,8.27-.11c4,0,5.81.26,7.6,1.75,1.64,1.34,2.24,2.53,2.24,5.07,0,4-3.21,8.12-10.81,8.12a14.12,14.12,0,0,1-3.73-.45Zm2.09-8a6.31,6.31,0,0,0,2.91.6c4.7,0,6.86-3.88,6.86-7.16,0-4.4-3.58-5.25-5.29-5.25a8.1,8.1,0,0,0-1.34.07Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M154.82,69.74A12.27,12.27,0,0,1,158,61.35,6.88,6.88,0,0,1,163.24,59a4.42,4.42,0,0,1,4.62,4.69,14.18,14.18,0,0,1-3.21,8.72,6.69,6.69,0,0,1-5.37,2.46C157.09,74.84,154.82,73.16,154.82,69.74Zm8.2-.38c1.38-2.35,2.53-5.44,2.53-6.78A1.58,1.58,0,0,0,164,60.9c-1.53,0-2.94,1.3-4.77,4.36a13,13,0,0,0-2,5.81,1.67,1.67,0,0,0,1.57,1.75C160.22,72.83,161.56,71.79,163,69.36Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M176.4,52.93c.49-1.3.45-2.27-.67-2.27h-1.19c-.15,0-.19-.11-.15-.3l.22-.86a.27.27,0,0,1,.3-.19h5.74c.34,0,.41.22.3.56l-7.53,20.35c-.37,1-.75,2.23,0,2.23s2.24-1.41,2.68-1.94c.15-.07.22-.07.37.07l.45.37c.07.15.15.22,0,.45s-3.35,3.43-6.63,3.43A1.33,1.33,0,0,1,169,73.49a23.47,23.47,0,0,1,1.19-3.73Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M184.3,69.7a8.28,8.28,0,0,0-.67,2.39c0,.3.15.52.45.52.75-.07,2.68-2.09,2.91-2.39.07-.15.22-.15.34,0l.41.41c.15.15.22.22.07.37-.22.3-2.83,3.87-6.89,3.87a1,1,0,0,1-1.08-1c0-.75.6-2.5,2.09-6.63l1-2.91a7.78,7.78,0,0,0,.6-2.16.4.4,0,0,0-.45-.45c-.6,0-2.31,1.94-2.83,2.53a.28.28,0,0,1-.45,0l-.37-.34c-.15-.11-.22-.19-.15-.34.22-.22,3.58-4.55,6.86-4.55.89,0,1.34.45,1.34,1.19A16,16,0,0,1,186.4,64Zm.64-17.26a2.12,2.12,0,0,1,2.09-2,2,2,0,0,1,2.27,1.86,2.32,2.32,0,0,1-2.2,2.16A2,2,0,0,1,184.94,52.44Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M198.87,71.26c.15.07.22.15.07.37-.56.82-3,3.2-5.74,3.2a3.44,3.44,0,0,1-3.35-3.69c0-5.22,4.06-12.19,8.68-12.19A2.33,2.33,0,0,1,201.1,61a1.81,1.81,0,0,1-1.57,1.86,1.19,1.19,0,0,1-1.27-.89c-.22-.52-.56-1.12-1.16-1.12-.82,0-1.53.89-2.24,2.53A17.65,17.65,0,0,0,193.41,70c0,1.86.56,2.68,1.53,2.68A5.14,5.14,0,0,0,198,71c.07-.15.22-.22.3-.15Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+    <path d="M209.35,73.57a45.89,45.89,0,0,0,3.35-7.45,9.69,9.69,0,0,0,.45-2.38,5.47,5.47,0,0,0-.3-1.72,4.87,4.87,0,0,1-.37-1.49A1.65,1.65,0,0,1,214.34,59c1.42,0,1.86,1,1.86,2.38,0,1.64-1.34,4.92-2.61,7.45-1.86,3.65-5.81,10.21-9.06,13.34-1.08,1-3.32,3.39-5.63,3.39-1.64,0-2.39-.89-2.39-1.94a2,2,0,0,1,1.71-1.94,1.69,1.69,0,0,1,1.34.67,1.74,1.74,0,0,0,1,.52,3.18,3.18,0,0,0,1.68-.63A16.32,16.32,0,0,0,206,78a3.76,3.76,0,0,0,.37-2.53c-.07-1.19-.93-11.11-1.38-12.75-.19-.67-.26-1-.71-1-.67,0-1.64,1.86-1.94,2.68-.07.22-.15.22-.34.19l-.56-.19c-.15,0-.15-.15-.07-.45s1.71-5,5-5c1.34,0,2.09,1,2.31,4.1.3,4.25.45,8.65.48,10.51h.23Z" transform="translate(-2.3 -2.14)" style="fill: #fff"/>
+  </g>
+</svg>
+
+    </a>
+  </div>
+
+                <div class="cc--component-container cc--sfs-main-menu">
+                  <div class="c--component c--sfs-main-menu">
+                                          <nav aria-label="Main">
+                        
+    <ul>
+          <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-90 menu-item-has-children has-children">
+        
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/programs/" target="" class="menu-item-text">Programs</a>
+
+              <button aria-label="Expand Sub-Navigation" class="toggle"></button>
+    
+      </div>
+
+                          <div class="submenu" aria-hidden="true">
+            <ul>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-3402 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/programs/degree-programs/" target="" class="menu-item-text">Graduate Programs</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-3163 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/programs/dual-degree-programs/" target="" class="menu-item-text">Dual Degree Programs</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-2948 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/programs/international-programs/" target="" class="menu-item-text">International Programs</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-3162 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/programs/certificate-programs/" target="" class="menu-item-text">Certificate Programs</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-3165 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/executive-education/" target="" class="menu-item-text">Executive Education</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                          </ul>
+          </div>
+                
+      </li>
+          <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-375 menu-item-has-children has-children">
+        
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/people/" target="" class="menu-item-text">People</a>
+
+              <button aria-label="Expand Sub-Navigation" class="toggle"></button>
+    
+      </div>
+
+                          <div class="submenu" aria-hidden="true">
+            <ul>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-3164 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/people/leadership-team/" target="" class="menu-item-text">Leadership Team</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-4607 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/people/faculty/" target="" class="menu-item-text">Faculty and Researchers</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-3161 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/people/staff/" target="" class="menu-item-text">Staff</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-6968 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/people/alumni-profiles/" target="" class="menu-item-text">Alumni</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                          </ul>
+          </div>
+                
+      </li>
+          <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-87 menu-item-has-children has-children">
+        
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/research/" target="" class="menu-item-text">Research</a>
+
+              <button aria-label="Expand Sub-Navigation" class="toggle"></button>
+    
+      </div>
+
+                          <div class="submenu" aria-hidden="true">
+            <ul>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-7403 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/research/featured-publications/" target="" class="menu-item-text">Featured Publications</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-3218 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/research/mccourt-centers/" target="" class="menu-item-text">Centers and Initiatives</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-13130 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="http://politics.georgetown.edu/#new_tab" target="_blank" class="menu-item-text">GU Politics</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-19756 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/research/research-data-center/" target="" class="menu-item-text">Research Data Center</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-7033 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/research/the-massive-data-institute/" target="" class="menu-item-text">Massive Data Institute</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-7405 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/people/faculty/" target="" class="menu-item-text">Faculty and Researchers</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-7404 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/research/faculty-seminars/" target="" class="menu-item-text">Research Seminars</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                          </ul>
+          </div>
+                
+      </li>
+          <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-2055 menu-item-has-children has-children">
+        
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/admissions/" target="" class="menu-item-text">Admissions</a>
+
+              <button aria-label="Expand Sub-Navigation" class="toggle"></button>
+    
+      </div>
+
+                          <div class="submenu" aria-hidden="true">
+            <ul>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-2944 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/admissions/application-requirements/" target="" class="menu-item-text">Application Requirements</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-2943 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/admissions/dates-deadlines/" target="" class="menu-item-text">Application Deadlines</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-3168 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/admissions/cost-aid-assistance/" target="" class="menu-item-text">Cost, Aid, and Assistance</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-23326 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/admissions/mccourts-foundational-skill-set/" target="" class="menu-item-text">McCourt’s Foundational Skill Set</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-9549 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://gradapply.georgetown.edu/portal/mccourt-events#new_tab" target="_blank" class="menu-item-text">Admissions Events</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-2946 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/admissions/mccourt-ambassadors/" target="" class="menu-item-text">McCourt Ambassadors</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-6094 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/admissions/mccourt-scholars/" target="" class="menu-item-text">McCourt Scholars</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-5874 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/admissions/class-profiles/" target="" class="menu-item-text">Class Profiles</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-2945 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/admissions/international-applicants/" target="" class="menu-item-text">International Applicants</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-5873 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/admissions/admissions-faq/" target="" class="menu-item-text">Admissions FAQ and Contact Information</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                          </ul>
+          </div>
+                
+      </li>
+          <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-371 menu-item-has-children has-children">
+        
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/life-at-mccourt/" target="" class="menu-item-text">Life at McCourt</a>
+
+              <button aria-label="Expand Sub-Navigation" class="toggle"></button>
+    
+      </div>
+
+                          <div class="submenu" aria-hidden="true">
+            <ul>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-21066 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/life-at-mccourt/student-organizations/" target="" class="menu-item-text">Student Organizations</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-3171 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/life-at-mccourt/community-engagement/" target="" class="menu-item-text">Community Engagement</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-20029 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://www.georgetown.edu/events/calendar/mccourt/#_ga=2.5432375.560549927.1605541980-682498265.1576267401&#038;_gac=1.114887157.1602712131.CjwKCAjww5r8BRB6EiwArcckCzArOLYnV8emKiNLIfDGQERH8X_FAwmiSat-DiMzaCzSONf8Gl0tZhoCTk4QAvD_BwE#new_tab" target="_blank" class="menu-item-text">Events at McCourt</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-7391 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/life-at-mccourt/research-opportunities/" target="" class="menu-item-text">Research Opportunities</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-7390 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/life-at-mccourt/opportunities-at-georgetown/" target="" class="menu-item-text">Opportunities at Georgetown</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-3169 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/life-at-mccourt/life-in-d-c/" target="" class="menu-item-text">Life in DC</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                              <li class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-7389 ">
+                  
+<div class="menu-item-container">
+    
+        <a href="https://mccourt.georgetown.edu/life-at-mccourt/resources-for-current-students/" target="" class="menu-item-text">Resources for Current Students</a>
+
+        
+      </div>
+
+                                                      
+                </li>
+                          </ul>
+          </div>
+                
+      </li>
+      </ul>
+  
+                      </nav>
+                                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </header>
+
+
+        <main id="content" class="content-wrapper">
+
+          <div class="wrapper ">
+
+            <div class="l--content">
+
+              <div class="content">
+
+                  <div class="tc--template-container tc--single-article">
+    <div class="t--template t--single-article">
+
+      <div class="content-top">
+        
+  
+  
+          
+    
+    
+
+<div
+    class="cc--component-container cc--hero-share no-image "
+
+  
+  
+  
+  
+  >
+
+    <div class="c--component c--hero-share"
+        >
+
+        
+    
+    <div class="text-container">
+      <div class="text-container-inner">
+
+        
+                      
+
+
+<div
+        class="f--field f--eyebrow no-image"
+                >
+
+    
+    
+    <span><span class="visually-hidden">Category:&nbsp;</span>Centering Inclusion, Discovery &amp; Impact, Research</span>
+
+
+</div><!-- f--field f--eyebrow -->
+        
+                      
+
+
+<div
+        class="f--field f--page-title no-image"
+                >
+
+    
+    
+    <h1><span class="visually-hidden">Title: </span>Decennial Dashboard</h1>
+
+
+</div><!-- f--field f--page-title -->
+        
+        <div class="info-container">
+          
+                      <div class="date"><span class="visually-hidden">Date Published:&nbsp;</span>August 24, 2021</div>
+          
+                        
+    
+
+<div
+    class="cc--component-container cc--share-icons-addtoany no-image "
+
+  
+  
+  
+  
+  >
+
+    <div class="c--component c--share-icons-addtoany"
+        >
+
+        
+  <span class="a2a_kit a2a_kit_size_32 addtoany_list" style="line-height: 32px;">
+
+    <span class="title">
+       Share
+    </span>
+
+    
+      
+        <a class="a2a_button_facebook" target="_blank" href="/#facebook" rel="nofollow noopener">
+
+          <span class="a2a_svg a2a_s__default a2a_s_facebook">
+            <svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><path fill='#63666A' d='M23.5,5.5H6.6C6,5.5,5.5,6,5.5,6.6v16.9c0,0.6,0.5,1,1.1,1h9.1v-7.3h-2.5 v-2.9h2.5v-2.1c0-2.5,1.5-3.8,3.7-3.8c0.7,0,1.5,0,2.2,0.1v2.6h-1.5c-1.2,0-1.4,0.6-1.4,1.4v1.8h2.8l-0.4,2.9h-2.5v7.3h4.9 c0.6,0,1-0.5,1-1V6.6C24.5,6,24,5.5,23.5,5.5z'/></svg>
+          </span>
+
+          <span class="a2a_label visually-hidden">Facebook</span>
+
+        </a>
+
+      
+    
+      
+        <a class="a2a_button_twitter" target="_blank" href="/#twitter" rel="nofollow noopener">
+          <span class="a2a_svg a2a_s__default a2a_s_twitter">
+            <svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><path fill='#63666A' d='M25,8.8c-0.7,0.2-1.4,0.5-2.2,0.7c0.7-0.5,1.4-1.3,1.7-2.2 c-0.7,0.4-1.6,0.7-2.5,0.9C21.3,7.5,20.3,7,19.1,7c-2.2,0-3.9,1.7-3.9,3.9c0,0.2,0,0.7,0.2,0.9c-3.2-0.2-6.1-1.7-8.1-4.1 C7.1,8.3,6.7,9,6.7,9.7c0,1.3,0.7,2.6,1.7,3.2c-0.7,0-1.3-0.2-1.8-0.5l0,0c0,2,1.3,3.6,3.1,3.8c-0.2,0.2-0.5,0.2-0.9,0.2 c-0.2,0-0.5,0-0.7,0c0.5,1.6,2,2.6,3.6,2.7c-1.3,1.1-3,1.7-4.8,1.7c-0.4,0-0.7,0-0.9,0c1.7,1.2,3.8,1.7,5.9,1.7 c7.2,0,11.1-5.9,11.1-11.1c0-0.2,0-0.4,0-0.5C23.8,10.2,24.5,9.6,25,8.8'/></svg>
+          </span>
+
+          <span class="a2a_label visually-hidden">Twitter</span>
+        </a>
+
+      
+    
+      
+        <a class="a2a_button_email" target="_blank" href="/#email" rel="nofollow noopener">
+
+          <span class="a2a_svg a2a_s__default a2a_s_print">
+            <svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 35 35' enable-background='new 0 0 35 35' xml:space='preserve'><path fill='#63666A' d='M9,11c-0.2,0-0.4,0-0.6,0.1l8.5,7.4c0.4,0.3,0.8,0.3,1.1,0l8.5-7.4C26.4,11,26.2,11,26,11 H9z M7.5,12.3c0,0.1,0,0.1,0,0.2v10C7.5,23.3,8.2,24,9,24h17c0.8,0,1.5-0.7,1.5-1.5v-10c0-0.1,0-0.1,0-0.2l-8.4,7.4 c-0.9,0.8-2.2,0.8-3.1,0L7.5,12.3z'/></svg>
+          </span>
+
+          <span class="a2a_label visually-hidden">Email</span>
+
+        </a>
+
+      
+    
+  </span>
+
+
+    </div><!-- c--component c--share-icons-addtoany -->
+
+</div><!-- cc--component-container cc--share-icons-addtoany -->
+                  </div>
+      </div>
+    </div>
+
+
+    </div><!-- c--component c--hero-share -->
+
+</div><!-- cc--component-container cc--hero-share -->
+
+      </div>
+
+      <section class="content-main" aria-label="Main content area">
+        
+  <div class="clc--component-list-container clc--article-component-list">
+    <div class="cl--component-list cl--article-component-list">
+
+      
+  
+    
+
+<div
+    class="cc--component-container cc--article-body-text  "
+
+  
+  
+  
+  
+  >
+
+    <div class="c--component c--article-body-text"
+        >
+
+        
+        
+
+
+<div
+        class="f--field f--richtext"
+                >
+
+    
+    
+    <p>Accurate decennial census data are critical to effective decision making at the national, state, and local levels. The Census Bureau’s population counts affect Congressional redistricting, social program funding, school planning, and more. To help state and local decision makers and data users determine the quality of 2020 Census data, we developed this dashboard to analyze whether the Census data look reasonable relative to expectations. We will continue to update the dashboard as the Census Bureau releases new 2020 data products.</p>
+
+
+
+</div><!-- f--field f--richtext -->
+
+
+    </div><!-- c--component c--article-body-text -->
+
+</div><!-- cc--component-container cc--article-body-text -->
+
+
+
+<center><div class='tableauPlaceholder' id='viz1634241438004' style='position: relative'><noscript><a href='#'><img alt='Main Dashboard (Map) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;De&#47;DecennialDashboard0_2&#47;MainDashboardMap&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='DecennialDashboard0_2&#47;MainDashboardMap' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;De&#47;DecennialDashboard0_2&#47;MainDashboardMap&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1634241438004');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='850px';vizElement.style.height='1127px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='850px';vizElement.style.height='1127px';} else { vizElement.style.width='100%';vizElement.style.height='4677px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script></center>
+
+
+  
+    
+
+<div
+    class="cc--component-container cc--spacer-block  "
+
+  
+  
+  
+  
+  >
+
+    <div class="c--component c--spacer-block"
+        >
+
+        
+
+
+    </div><!-- c--component c--spacer-block -->
+
+</div><!-- cc--component-container cc--spacer-block -->
+
+
+
+  
+    
+
+<div
+    class="cc--component-container cc--article-body-text  "
+
+  
+  
+  
+  
+  >
+
+    <div class="c--component c--article-body-text"
+        >
+
+        
+        
+
+
+<div
+        class="f--field f--richtext"
+                >
+
+    
+    <h1>About this Tool</h1>
+    <p>The purpose of this tool is to engage local governments and non-profit organizations to enhance their understanding of data used to implement critical programs. Often state and local agencies view themselves as just consumers of census data who deliver services.   Our intent is to assist those users in building statistical capacity and understanding that they can become partners in the process and improve the relationship between statistics and ground truth. 
+<br><br>
+        The Decennial Dashboard provides indicators of divergence between the Census Bureau’s population estimates (with minor adaptations) and the decennial census for April 1, 2020.  Results are shown for population counts, housing unit counts, group quarters, and Race and Ethnicity.  Reports can be downloaded as Excel or .pdf files. 
+        <br><br>
+        Decennial Dashboard reports are based on the U.S. Census Bureau’s American Community Survey, 2020 Census ... 
+        <br><br>
+        Decennial Dashboard was developed with funding from the Tableau Foundation and Alfred P. Sloan Foundation.
+        </p><br><br>
+    <h1>Frequently Asked Questions</h1>
+    <br>
+    <br>
+    <button class="accordion">Why should I use this tool? ▼</button>
+  <div class="panel">
+    <p>Federal population statistics drive trillions of  dollars in federal and state funding, local policy decisions, and federal, state,  and local agency actions to implement statutory and regulatory  requirements as well as the basis for non-profit organizations to assist local  communities.  However well designed, statistical measurements are not  perfect in their depiction of “ground-truth.”</p>
+  </div>
+  <br><br>
+  <button class="accordion">How are measures of divergence calculated? ▼</button>
+  <div class="panel">
+    <p>Lorem ipsum...</p>
+  </div>
+  <br><br>
+  <button class="accordion">Who can help me explore this further? ▼</button>
+  <div class="panel">
+    <p>If you have concerns about your statistics, we suggest that you work with your State Data Center representative - the contact list for your state is  located here: https://www.census.gov/about/partners/sdc/member-network.html
+
+        or Federal-State Cooperative for Population Estimates representative - .  The the contact list for your state is located here:   XXXXXXXXXhttps://www.census.gov/programs-surveys/popest/about/fscpe/contacts.html
+        </p>
+  </div>
+  <br><br>
+  <button class="accordion">Who created this tool? ▼</button>
+  <div class="panel">
+    <p>Urban REAL and GU MDI ... Our goals are to 1) assist in the continuance and expansion of local partnerships, 2) provide data integration, analysis, and evaluation to increase the understanding of these statistics and their impact, and 3) assist local areas throughout the decade to improve statistical representations of their areas--specifically to improve the Census Bureau’s annual population estimates and ultimately the 2030 Decennial Census. + Izzy’s catch on data/racial equality
+        </p>
+  </div>
+
+
+
+</div><!-- f--field f--richtext -->
+
+
+    </div><!-- c--component c--article-body-text -->
+
+</div><!-- cc--component-container cc--article-body-text -->
+
+
+  
+    
+
+<div
+    class="cc--component-container cc--spacer-block  "
+
+  
+  
+  
+  
+  >
+
+    <div class="c--component c--spacer-block"
+        >
+
+        
+
+
+    </div><!-- c--component c--spacer-block -->
+
+</div><!-- cc--component-container cc--spacer-block -->
+
+
+      
+      
+      
+    </div>
+  </div>
+
+      </section>
+
+                  
+    </div><!-- t--template t--single-article -->
+  </div><!-- tc--template-container tc--single-article -->
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </main>
+
+        
+					
+
+
+        
+  
+
+        
+  
+
+        
+  
+
+        
+  
+
+        
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+
+<footer
+   id="footer"  class="cc--component-container cc--footer  "
+
+  
+  
+  
+  
+  >
+
+    <div class="c--component c--footer"
+        >
+
+          <div class="footer-container">
+    <div class="row">
+      <div class="logos">
+        
+          
+    
+
+<div
+    class="cc--component-container cc--footer-social-menu  "
+
+  
+  
+  
+  
+  >
+
+    <div class="c--component c--footer-social-menu"
+        >
+
+        
+<ul>
+      <li class="menu-item">
+      <a href="https://www.facebook.com/McCourtSchool"><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><title>Facebook</title><path fill='#FFFFFF' d='M23.5,5.5H6.6C6,5.5,5.5,6,5.5,6.6v16.9c0,0.6,0.5,1,1.1,1h9.1v-7.3h-2.5v-2.9h2.5v-2.1c0-2.5,1.5-3.8,3.7-3.8c0.7,0,1.5,0,2.2,0.1v2.6h-1.5c-1.2,0-1.4,0.6-1.4,1.4v1.8h2.8l-0.4,2.9h-2.5v7.3h4.9c0.6,0,1-0.5,1-1V6.6C24.5,6,24,5.5,23.5,5.5z'/></svg></a>
+    </li>
+      <li class="menu-item">
+      <a href="https://twitter.com/mccourtschool"><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><title>Twitter</title><path fill='#FFFFFF' d='M25,8.8c-0.7,0.2-1.4,0.5-2.2,0.7c0.7-0.5,1.4-1.3,1.7-2.2c-0.7,0.4-1.6,0.7-2.5,0.9C21.3,7.5,20.3,7,19.1,7c-2.2,0-3.9,1.7-3.9,3.9c0,0.2,0,0.7,0.2,0.9c-3.2-0.2-6.1-1.7-8.1-4.1C7.1,8.3,6.7,9,6.7,9.7c0,1.3,0.7,2.6,1.7,3.2c-0.7,0-1.3-0.2-1.8-0.5l0,0c0,2,1.3,3.6,3.1,3.8c-0.2,0.2-0.5,0.2-0.9,0.2c-0.2,0-0.5,0-0.7,0c0.5,1.6,2,2.6,3.6,2.7c-1.3,1.1-3,1.7-4.8,1.7c-0.4,0-0.7,0-0.9,0c1.7,1.2,3.8,1.7,5.9,1.7c7.2,0,11.1-5.9,11.1-11.1c0-0.2,0-0.4,0-0.5C23.8,10.2,24.5,9.6,25,8.8'/></svg></a>
+    </li>
+      <li class="menu-item">
+      <a href="https://www.instagram.com/georgetownmccourtschool/"><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><title>Instagram</title><path fill='#FFFFFF' d='M15,5.5c-2.6,0-2.9,0-3.9,0.1c-1,0-1.7,0.2-2.3,0.4C8.2,6.2,7.6,6.6,7.1,7.1S6.2,8.2,6,8.8c-0.2,0.6-0.4,1.3-0.4,2.3c-0.1,1-0.1,1.3-0.1,3.9s0,2.9,0.1,3.9c0,1,0.2,1.7,0.4,2.3c0.2,0.6,0.6,1.2,1.1,1.7s1.1,0.9,1.7,1.1c0.6,0.2,1.3,0.4,2.3,0.4s1.3,0.1,3.9,0.1s2.9,0,3.9-0.1c1,0,1.7-0.2,2.3-0.4c0.6-0.2,1.2-0.6,1.7-1.1s0.9-1.1,1.1-1.7c0.2-0.6,0.4-1.3,0.4-2.3s0.1-1.3,0.1-3.9s0-2.9-0.1-3.9c0-1-0.2-1.7-0.4-2.3c-0.2-0.6-0.6-1.2-1.1-1.7S21.8,6.2,21.2,6c-0.6-0.2-1.3-0.4-2.3-0.4C17.9,5.5,17.6,5.5,15,5.5 M15,7.2c2.5,0,2.8,0,3.8,0.1c0.9,0,1.4,0.2,1.8,0.3C21,7.8,21.4,8,21.7,8.3s0.5,0.7,0.7,1.1c0.1,0.3,0.3,0.8,0.3,1.8s0.1,1.3,0.1,3.9c0,2.5,0,2.8-0.1,3.8c0,0.9-0.2,1.4-0.3,1.8c-0.2,0.4-0.4,0.8-0.7,1.1c-0.3,0.3-0.6,0.5-1.1,0.7c-0.3,0.1-0.8,0.3-1.8,0.3s-1.3,0.1-3.8,0.1s-2.8,0-3.8-0.1c-0.9,0-1.4-0.2-1.8-0.3c-0.4-0.2-0.8-0.4-1.1-0.7c-0.3-0.3-0.5-0.7-0.7-1.1c-0.1-0.3-0.3-0.8-0.3-1.8s-0.1-1.3-0.1-3.8s0-2.8,0.1-3.9c0-0.9,0.2-1.4,0.3-1.8C7.8,9,8,8.6,8.3,8.3C8.6,8,8.9,7.8,9.4,7.6c0.3-0.1,0.8-0.3,1.8-0.3C12.2,7.2,12.5,7.2,15,7.2M15,18.2c-1.7,0-3.2-1.4-3.2-3.2s1.4-3.2,3.2-3.2s3.2,1.4,3.2,3.2S16.7,18.2,15,18.2 M15,10.1c-2.7,0-4.9,2.2-4.9,4.9s2.2,4.9,4.9,4.9s4.9-2.2,4.9-4.9S17.7,10.1,15,10.1 M21.2,9.9c0,0.6-0.5,1.1-1.1,1.1c-0.6,0-1.1-0.5-1.1-1.1c0-0.6,0.5-1.1,1.1-1.1C20.7,8.8,21.2,9.3,21.2,9.9'/></svg></a>
+    </li>
+      <li class="menu-item">
+      <a href="https://www.linkedin.com/school/georgetown-mccourt-school-of-public-policy/"><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><title>LinkedIn</title><path fill='#FFFFFF' d='M24.5,20.9c0,2-1.6,3.6-3.6,3.6H9.1c-2,0-3.6-1.6-3.6-3.6V9.1c0-2,1.6-3.6,3.6-3.6h11.8c2,0,3.6,1.6,3.6,3.6V20.9z M9.9,8.7c-1,0-1.6,0.6-1.6,1.5c-0.1,0.9,0.5,1.5,1.5,1.5l0,0c1,0,1.6-0.6,1.6-1.5C11.4,9.3,10.8,8.7,9.9,8.7z M11.3,21.4v-8.6H8.5v8.6H11.3z M21.5,21.4v-4.9c0-2.6-1.4-3.8-3.3-3.8c-1.5,0-2.1,0.9-2.5,1.5l0,0v-1.2h-2.8c0,0,0,0.9,0,8.6h2.8v-4.9c0-0.2,0-0.5,0.1-0.7c0.1-0.5,0.6-1,1.5-1c1,0,1.5,0.7,1.5,2v4.6H21.5z'/></svg></a>
+    </li>
+      <li class="menu-item">
+      <a href="https://www.youtube.com/channel/UC9Wg-iqnzUtwcp96e_dgbEg"><svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><path fill='#FFFFFF' d='M27.6,10c0,0-0.3-1.7-1.1-2.5c-1-1.1-2.1-1.1-2.6-1.1c-3.5-0.3-9-0.3-9-0.3l0,0c0,0-5.4,0-9,0.3c-0.6,0-1.6,0-2.7,1.1c-0.8,0.8-1,2.5-1,2.5s-0.3,2-0.3,4.1V16c0,2,0.3,4.1,0.3,4.1s0.3,1.7,1.1,2.5c1,1.1,2.3,1,2.9,1.1C8.3,23.9,15,24,15,24s5.4,0,9.1-0.3c0.5-0.1,1.6-0.1,2.6-1.1c0.8-0.8,1.1-2.5,1.1-2.5s0.3-2,0.3-4.1v-1.9C27.9,12,27.6,10,27.6,10z M12.3,18.6v-7.2l6.9,3.4L12.3,18.6z'/></svg></a>
+    </li>
+  </ul>
+
+
+    </div><!-- c--component c--footer-social-menu -->
+
+</div><!-- cc--component-container cc--footer-social-menu -->
+                    
+
+
+<div
+        class="f--field f--georgetown-logo"
+                >
+
+    
+    <a href="https://www.georgetown.edu/" class="georgetown-logo">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 300.1 21.9" width="300" height="22" enable-background="new 0 0 300.1 21.9" xml:space="preserve">
+   <title>Georgetown University</title>
+<path fill="#FFFFFF" d="M10.7,16.7c-0.2,0.7-0.6,2-0.9,2.6c-0.6,1.1-2.1,2.6-3.7,2.6c-2,0-2.8-1-2.8-2
+	c0-0.8,0.4-1.3,1.2-1.3s0.9,0.7,0.9,0.9c0,0.3-0.1,0.6-0.2,0.7c0,0-0.1,0.1-0.1,0.3c0,0.4,0.5,0.7,0.9,0.7c1.1,0,1.7-0.9,2.1-2.4
+	c0.3-1,0.6-2.7,1.4-5.7H9.4c-0.3,0.4-1.5,2.1-4.4,2.1c-3,0-5-2.1-5-5.8c0-2.8,1.3-5.1,2.9-6.7c1.2-1.2,3.1-2.5,6-2.5
+	c2.2,0,3.4,0.7,3.8,1.1c0.3,0.2,0.5,0.3,0.6,0.3c0.3,0,0.4-0.2,0.5-0.7c0-0.1,0.1-0.1,0.2-0.1l0.3,0.1c0.1,0,0.2,0.1,0.1,0.2
+	l-1.2,4.3c0,0.1-0.1,0.2-0.2,0.1h-0.3c-0.1,0-0.2-0.1-0.2-0.2c0.4-1.8-0.7-4.1-3.5-4.1c-1.4,0-2.9,0.5-4.4,2.4c-1.2,1.6-2,3.9-2,6.5
+	c0,3.5,2.2,4.1,3.1,4.1c2.6,0,3.8-2.2,3.9-3.5c0.1-0.8-0.2-1-0.8-1H8.3C8.1,9.6,8.1,9.5,8.1,9.4l0.1-0.5c0-0.1,0.1-0.2,0.2-0.2
+	c0.3,0,1.1,0.1,3,0.1c1.5,0,2-0.1,2.3-0.1c0.2,0,0.2,0.1,0.2,0.2l-0.1,0.5c0,0.1-0.1,0.2-0.2,0.2h-0.5c-0.4,0-0.7,0.2-1,1.3
+	L10.7,16.7z M27.2,11c-0.1-0.1-0.2,0-0.3,0c-0.3,0.4-1.5,1.8-2,2.2C24.3,13.7,23.7,14,23,14h-4.8l2.1-6.5h1.1c1.5,0,2.4,0.2,2.4,1.8
+	c0,0.1,0,0.2,0.1,0.2h0.4c0.1,0,0.1,0,0.2-0.1c0.1-0.8,0.8-3.5,1.1-4.3c0,0,0-0.1-0.1-0.1l-0.4-0.1c-0.1,0-0.1,0-0.2,0.1
+	c-0.8,1.7-1.6,1.8-2.5,1.8h-1.8l1.8-5.6h3.3c0.1,0,0.3,0,0.4,0.2l2.2,2.5C28.4,4,28.5,4.1,28.6,4l0.3-0.1C29,3.8,29,3.8,29,3.7
+	l-0.6-2.9c-0.1-0.3-0.1-0.4-0.5-0.4c-0.2,0-0.8,0-1.6,0c-0.9,0-2,0-3.6,0h-1.6c-0.5,0-1.2,0-1.8,0c-0.6,0-1.1,0-1.2,0
+	c-0.2,0-0.2,0-0.3,0.2l-0.1,0.5c0,0.1,0,0.2,0.1,0.2h0.7c0.6,0,1.4,0.3,1.1,1.5L16.3,13c-0.2,0.7-0.6,1.1-1.5,1.1h-0.7
+	c-0.1,0-0.1,0-0.2,0.1l-0.1,0.6c0,0.1,0,0.2,0.1,0.2s0.5,0,0.9,0c0.5,0,1.1,0,1.8,0h2.8c1.5,0,3,0,4.2,0c1.2,0,2.1,0,2.3,0
+	c0.3,0,0.4,0,0.5-0.4l1.1-3.1c0-0.2,0-0.2,0-0.2L27.2,11z M43.5,6.4c0-3.9-2.4-6.3-5.8-6.3c-4.5,0-7.8,4.2-7.8,8.7
+	c0,1.9,0.6,3.6,1.9,4.9c1.3,1.3,3,1.4,3.9,1.4C40.5,15.2,43.5,10.7,43.5,6.4z M35.1,2.8c0.8-0.9,1.8-1.6,3.1-1.6c1.9,0,3,1.4,3,3.6
+	c0,4.6-2.8,9.4-6,9.4c-1.8,0-3.2-1.2-3.2-3.9C32.1,7.9,33.3,4.8,35.1,2.8z M48.9,7.9c0.6,0,1.5-0.1,2,1.1c0.3,0.5,2.1,4.7,2.4,5.2
+	c0.3,0.5,0.4,0.7,0.6,0.7c0.3,0,0.7-0.1,2-0.1c1.2,0,1.5,0.1,1.7,0.1c0.1,0,0.2-0.1,0.2-0.2v-0.4c0-0.1,0-0.2-0.1-0.2h-0.6
+	c-0.8,0-1.3-0.3-1.9-1.2c-0.4-0.6-1.8-3.6-2-3.8C53,8.7,52.6,8,52,7.9V7.8c2.8-0.3,5.1-2,5.1-4.1c0-3-3.2-3.1-5.1-3.1
+	c-0.6,0-2.8,0.1-5.1,0.1c-0.2,0-0.3,0-0.3,0.2l-0.1,0.5c0,0.1,0,0.2,0.2,0.2h0.7c0.7,0,0.9,0.4,0.6,1.1l-3.4,10.7
+	c-0.2,0.5-0.6,1-1.1,1h-0.6c-0.2,0-0.2,0-0.2,0.2l-0.1,0.5c0,0.1,0,0.2,0.1,0.2c0.3,0,1.1-0.1,2.6-0.1c1.8,0,2.8,0.1,3,0.1
+	c0.1,0,0.2,0,0.3-0.2v-0.5c0-0.1,0-0.2-0.1-0.2h-0.9c-0.6,0-0.8-0.4-0.5-1.5L48.9,7.9z M51.1,1.2c0.3,0,0.5,0,0.9,0
+	c2.1,0,2.7,1.4,2.7,2.3c0,1.5-1,2.7-2.1,3.2c-1.5,0.6-2.6,0.5-3.4,0.5L51.1,1.2z M71.1,10.9c0.3-1.1,0.6-1.3,1-1.3h0.5
+	c0.1,0,0.2,0,0.2-0.2l0.1-0.5c0-0.1,0-0.2-0.2-0.2c-0.3,0-0.8,0.1-2.3,0.1c-1.9,0-2.6-0.1-3-0.1c-0.2,0-0.2,0-0.2,0.2l-0.1,0.5
+	c0,0.2,0,0.2,0.2,0.2h0.8c0.6,0,0.8,0.2,0.8,1c-0.1,1.3-1.3,3.5-3.9,3.5c-0.9,0-3.1-0.6-3.1-4.1c0-2.6,0.7-4.9,2-6.5
+	c1.5-2,3-2.4,4.4-2.4c2.8,0,3.8,2.3,3.5,4.1c0,0.1,0,0.2,0.1,0.2h0.3c0.1,0,0.2,0,0.2-0.1L73.5,1c0-0.1,0-0.2-0.1-0.2l-0.3-0.1
+	c-0.1,0-0.2,0-0.2,0.1c-0.1,0.5-0.3,0.7-0.5,0.7c-0.1,0-0.3,0-0.6-0.3c-0.4-0.3-1.6-1.1-3.8-1.1c-3,0-4.8,1.3-6,2.5
+	c-1.6,1.6-2.9,3.9-2.9,6.7c0,3.7,2,5.8,5,5.8c2.9,0,4.1-1.7,4.4-2.1h0.1c-0.8,3-1.2,4.7-1.4,5.7c-0.4,1.5-1,2.4-2.1,2.4
+	c-0.5,0-0.9-0.2-0.9-0.7c0-0.2,0-0.3,0.1-0.4s0.2-0.5,0.2-0.7s-0.1-0.9-0.9-0.9s-1.2,0.6-1.2,1.3c0,1,0.8,2,2.8,2
+	c1.6,0,3.2-1.4,3.7-2.6c0.3-0.6,0.7-1.8,0.9-2.6L71.1,10.9z M86.2,11c-0.1-0.1-0.2,0-0.3,0c-0.3,0.4-1.5,1.8-2,2.2
+	C83.3,13.7,82.7,14,82,14h-4.8l2.1-6.5h1.1c1.5,0,2.4,0.2,2.4,1.8c0,0.1,0,0.2,0.1,0.2h0.4c0.1,0,0.1,0,0.2-0.1
+	c0.1-0.8,0.8-3.5,1.1-4.3c0,0,0-0.1-0.1-0.1l-0.4-0.1c-0.1,0-0.1,0-0.2,0.1c-0.8,1.7-1.6,1.8-2.5,1.8h-1.8l1.8-5.6h3.3
+	c0.1,0,0.3,0,0.4,0.2l2.2,2.5C87.4,4,87.5,4.1,87.6,4l0.3-0.1C88,3.8,88,3.8,88,3.7l-0.6-2.9c-0.1-0.3-0.1-0.4-0.5-0.4
+	c-0.2,0-0.8,0-1.6,0c-0.9,0-2,0-3.6,0h-1.6c-0.5,0-1.2,0-1.8,0c-0.6,0-1.1,0-1.2,0c-0.2,0-0.2,0-0.3,0.2l-0.1,0.5
+	c0,0.1,0,0.2,0.1,0.2h0.7c0.6,0,1.4,0.3,1.1,1.5L75.3,13c-0.2,0.7-0.6,1.1-1.5,1.1h-0.7c-0.1,0-0.1,0-0.2,0.1l-0.1,0.6
+	c0,0.1,0,0.2,0.1,0.2s0.5,0,0.9,0c0.5,0,1.1,0,1.8,0h2.8c1.5,0,3,0,4.2,0s2.1,0,2.3,0c0.3,0,0.4,0,0.5-0.4l1.1-3.1
+	c0-0.2,0-0.2,0-0.2L86.2,11z M94.4,0.5c-2.2,0-3.3-0.2-3.7-0.3C90.5,0.1,90.5,0,90.4,0s-0.2,0.1-0.2,0.2c0,0.1-1.4,3.1-1.6,3.6
+	c0,0.1,0,0.2,0,0.2l0.3,0.2c0.1,0,0.2,0,0.3-0.1c0.5-0.6,1.6-1.8,2.4-2.4C92.1,1.3,93,1.2,95,1.2h0.6l-3.3,10.6
+	c-0.5,1.6-0.9,2.2-2.1,2.2h-0.6c-0.2,0-0.2,0-0.3,0.2v0.5c0,0.1,0,0.2,0.2,0.2s1.4-0.1,3.5-0.1c2,0,2.9,0.1,3.2,0.1
+	c0.2,0,0.2-0.1,0.3-0.2l0.1-0.4c0-0.1,0-0.2-0.1-0.2h-0.9c-1.1,0-1.3-0.5-0.9-1.8l3.4-10.9h0.4c1,0,2.5,0.2,3,0.6
+	c0.3,0.6,0.7,1.9,0.9,2.6c0.1,0.3,0.2,0.3,0.3,0.3l0.3-0.1c0.1,0,0.2-0.1,0.2-0.2c0-0.9,0.2-4,0.2-4.3c0-0.1-0.1-0.2-0.2-0.2
+	s-0.1,0-0.2,0.1c-0.4,0.2-1.2,0.4-3.1,0.4h-5.5V0.5z M116.6,6.4c0-3.9-2.4-6.3-5.8-6.3c-4.5,0-7.8,4.2-7.8,8.7
+	c0,1.9,0.6,3.6,1.9,4.9s3,1.4,3.9,1.4C113.6,15.2,116.6,10.7,116.6,6.4z M108.2,2.8c0.8-0.9,1.8-1.6,3.1-1.6c1.9,0,3,1.4,3,3.6
+	c0,4.6-2.8,9.4-6,9.4c-1.8,0-3.2-1.2-3.2-3.9C105.1,7.9,106.4,4.8,108.2,2.8z M122.9,2.4c0.2-0.9,0.5-1.1,1.1-1.1h0.3
+	c0.2,0,0.2-0.1,0.2-0.2l0.1-0.5c0-0.1,0-0.2-0.2-0.2c-0.3,0-1.1,0.1-2.4,0.1c-1.4,0-2.3-0.1-2.5-0.1s-0.2,0-0.3,0.2l-0.1,0.5
+	c0,0.2,0,0.2,0.2,0.2h0.5c0.5,0,0.6,0.4,0.5,1.1l-1.5,12c-0.1,0.6,0,0.9,0.3,0.9s0.6-0.3,0.8-0.6c0.8-0.9,6.6-9,6.8-9.3
+	c0.2-0.2,0.3-0.2,0.3,0l-0.6,9c0,0.5,0,0.8,0.4,0.8s0.6-0.3,0.9-0.7c0.9-1.1,3.7-5.3,4.3-6.3c0.5-0.9,3.7-6.2,3.9-6.5
+	c0.3-0.5,0.7-0.6,1.1-0.6h0.4c0.1,0,0.1,0,0.2-0.2l0.1-0.5c0-0.1,0-0.2-0.2-0.2c-0.3,0-0.9,0.1-2.1,0.1c-1.1,0-1.6-0.1-1.9-0.1
+	c-0.1,0-0.2,0-0.2,0.2l-0.1,0.5c0,0.2,0,0.2,0.2,0.2h0.3c0.6,0,0.7,0.6,0.5,1.1c-0.1,0.8-1.1,2.8-2.1,4.5c-0.4,0.7-2.5,4.2-3,4.7
+	c-0.2,0.3-0.3,0.2-0.3-0.2l1.1-8.9c0.1-0.8,0.3-1,0.7-1h0.3c0.2,0,0.2,0,0.3-0.2l0.1-0.5c0-0.1,0-0.2-0.2-0.2
+	c-0.3,0-0.8,0.1-2.1,0.1c-1.3,0-1.9-0.1-2.1-0.1s-0.2,0-0.3,0.1l-0.1,0.6c0,0.1,0,0.2,0.2,0.2h0.3c0.4,0,0.6,0.3,0.6,0.7
+	c0,0.5-0.3,1.3-0.8,2.1c-0.1,0.1-4.8,7-5,7.1c-0.2,0.3-0.4,0.2-0.3-0.1L122.9,2.4z M133.5,12.7c0,1.8,1.5,2.7,3,2.7
+	c3.1,0,5.1-2.4,6.2-4.4c1.1-1.9,2-4.7,2.5-7.4c0.1-0.3,0.2-0.3,0.2-0.1c1.1,4.2,3,9,5.4,12.2c1.3,1.7,4.1,5.1,8.4,5.1
+	c2.5,0,3.6-1.2,4-1.6s0.6-1.1,0.6-1.3c0-0.3-0.2-0.7-0.6-0.7c-0.4,0-0.7,0.4-0.9,1.4c-0.2,0.7-0.9,1.2-2,1.2c-3.7,0-6.9-4-8-5.8
+	c-0.2-0.4-0.6-0.8-0.2-2.4c1.4-6.2,3-8.4,4.5-9.5c0.7-0.5,1.1-0.6,1.5-0.6c0.3,0,0.7,0.2,0.8,0.5c0.2,0.3,0.5,0.6,0.9,0.6
+	c0.5,0,1.1-0.5,1.1-1.1c0-0.7-0.6-1.5-1.9-1.5c-0.9,0-1.9,0.2-3,1.1c-2.4,1.8-3.8,6-4.7,10.2c-0.1,0.4-0.2,0.6-0.3,0.3
+	c-1.2-1.9-3.2-7.4-3.9-10.6c-0.1-0.3-0.2-0.5-0.6-0.5c-3.9,0-6-0.2-7.6,0.9c-1,0.7-1.5,1.9-1.5,3c0,1,0.6,1.8,1.4,1.8
+	c0.7,0,1.1-0.5,1.1-0.9s-0.3-0.9-1-1c-0.5-0.1-0.6-0.6-0.6-0.9c0-0.5,0.8-1.1,1.7-1.4c1.2-0.4,2.4-0.4,3.8-0.4
+	c0.5,0,0.7,0.2,0.7,0.6c0,2.1-1.7,6.8-3.2,8.9c-0.9,1.3-2.7,2.9-4.7,2.9c-1.2,0-1.5-0.5-1.4-0.9c0.1-0.5,0.7-0.8,0.7-1.4
+	c0-0.7-0.5-1-1.1-1C134.3,11,133.5,11.6,133.5,12.7z M195.7,14.4c0.1,0.3,0.3,0.4,0.6,0.4c0.1,0,0.3-0.2,0.4-0.6l3.9-11.3
+	c0.4-1.2,0.9-1.7,1.4-1.7h0.6c0.1,0,0.2,0,0.2-0.2l0.1-0.4c0-0.2,0-0.3-0.2-0.3c-0.3,0-0.7,0.1-1.8,0.1c-1.5,0-2.2-0.1-2.4-0.1
+	c-0.1,0-0.2,0.1-0.2,0.2V1c0,0.2,0,0.2,0.2,0.2h0.6c0.7,0,0.9,0.7,0.3,2.4l-2.3,6.9c-0.2,0.5-0.3,0.6-0.4,0.3l-4.8-9.9
+	c-0.1-0.3-0.3-0.6-0.6-0.6c-2.5,0-3.4-0.1-3.6-0.1c-0.2,0-0.2,0.1-0.3,0.2L187.1,1c0,0.2,0,0.3,0.2,0.3h0.8c0.9,0,1.4,0.6,0.9,1.9
+	l-2.6,8.3c-0.6,1.9-1.2,2.6-2.1,2.6h-0.5c-0.1,0-0.2,0.1-0.2,0.2l-0.1,0.5c0,0.2,0,0.2,0.1,0.2c0.3,0,0.9-0.1,2.4-0.1
+	s2.4,0.1,2.6,0.1c0.2,0,0.2,0,0.3-0.2l0.1-0.5c0-0.1,0-0.2-0.2-0.2H188c-0.9,0-1-1-0.3-3.5l2.1-7.2c0-0.3,0.2-0.3,0.3,0L195.7,14.4z
+	 M202.8,12.5c-0.3,1.1-0.4,1.5-1.7,1.5h-0.8c-0.1,0-0.2,0-0.2,0.2l-0.1,0.5c0,0.1,0,0.2,0.2,0.2c0.3,0,1.4-0.1,3.2-0.1
+	c2.2,0,3.2,0.1,3.4,0.1s0.2,0,0.3-0.2v-0.4c0-0.1,0-0.2-0.1-0.2h-0.8c-0.9,0-1.2-0.4-0.9-1.5l2.7-9.9c0.3-1.2,0.8-1.4,1.7-1.4h0.6
+	c0.2,0,0.2-0.1,0.2-0.2l0.1-0.4c0-0.2,0-0.3-0.3-0.3s-1.2,0.1-3,0.1c-1.7,0-2.9-0.1-3.1-0.1c-0.2,0-0.3,0-0.3,0.1l-0.1,0.6
+	c0,0.1,0,0.2,0.2,0.2h1c0.6,0,0.9,0.3,0.6,1.4L202.8,12.5z M214.3,11c-0.3,0.4-0.6,0.3-0.5-0.2l1.5-8.6c0.1-0.6,0.5-0.9,1.2-0.9h0.6
+	c0.2,0,0.2,0,0.2-0.2l0.1-0.5c0-0.2,0-0.2-0.2-0.2c-0.3,0-1.2,0.1-2.7,0.1c-1.8,0-2.7-0.1-3-0.1c-0.2,0-0.2,0-0.2,0.2l-0.2,0.5
+	c0,0.2,0,0.2,0.2,0.2h0.7c0.7,0,0.9,0.5,0.8,1.2l-1.7,12c-0.1,0.5,0,0.8,0.3,0.8s0.6-0.2,0.7-0.4l9.2-11.5c0.8-1.1,1.9-2.1,2.7-2.1
+	h0.5c0.1,0,0.2-0.1,0.2-0.2l0.1-0.5c0-0.1,0-0.2-0.2-0.2c-0.3,0-0.8,0.1-2.1,0.1c-1.2,0-1.9-0.1-2.2-0.1c-0.2,0-0.3,0-0.3,0.2
+	l-0.1,0.5c0,0.1,0,0.2,0.2,0.2h0.4c0.6,0,0.5,0.8-0.3,1.8L214.3,11z M234.6,11c-0.1-0.1-0.2,0-0.3,0c-0.3,0.4-1.5,1.8-2,2.2
+	c-0.6,0.5-1.2,0.8-1.9,0.8h-4.8l2.1-6.5h1.1c1.5,0,2.4,0.2,2.4,1.8c0,0.1,0,0.2,0.1,0.2h0.4c0.1,0,0.1,0,0.2-0.1
+	c0.1-0.8,0.8-3.5,1.1-4.3c0,0,0-0.1-0.1-0.1l-0.4-0.1c-0.1,0-0.1,0-0.2,0.1c-0.8,1.7-1.6,1.8-2.5,1.8H228l1.8-5.6h3.3
+	c0.1,0,0.3,0,0.4,0.2l2.2,2.5c0.1,0.1,0.2,0.2,0.3,0.1l0.3-0.1c0.1-0.1,0.1-0.1,0.1-0.2l-0.6-2.9c-0.1-0.3-0.1-0.4-0.5-0.4
+	c-0.2,0-0.8,0-1.6,0c-0.9,0-2,0-3.6,0h-1.5c-0.5,0-1.2,0-1.8,0s-1.1,0-1.2,0c-0.2,0-0.2,0-0.3,0.2l-0.1,0.5c0,0.1,0,0.2,0.1,0.2h0.7
+	c0.6,0,1.4,0.3,1.1,1.5L223.8,13c-0.2,0.7-0.6,1.1-1.5,1.1h-0.7c-0.1,0-0.1,0-0.2,0.1l-0.1,0.6c0,0.1,0,0.2,0.1,0.2s0.5,0,0.9,0
+	c0.5,0,1.1,0,1.8,0h2.8c1.5,0,3,0,4.2,0s2.1,0,2.3,0c0.3,0,0.4,0,0.5-0.4l1.1-3.1c0-0.2,0-0.2,0-0.2L234.6,11z M241.3,7.9
+	c0.6,0,1.5-0.1,2,1.1c0.3,0.5,2.1,4.7,2.4,5.2c0.3,0.5,0.4,0.7,0.6,0.7c0.3,0,0.7-0.1,2-0.1c1.2,0,1.5,0.1,1.7,0.1
+	c0.1,0,0.2-0.1,0.2-0.2v-0.4c0-0.1,0-0.2-0.1-0.2h-0.6c-0.8,0-1.3-0.3-1.9-1.2c-0.4-0.6-1.8-3.6-2-3.8c-0.2-0.4-0.6-1.1-1.2-1.2V7.8
+	c2.8-0.3,5.1-2,5.1-4.1c0-3-3.2-3.1-5.1-3.1c-0.6,0-2.8,0.1-5.1,0.1c-0.2,0-0.3,0-0.3,0.2l0.1,0.2c0,0.1,0,0.2,0.2,0.2h0.7
+	c0.7,0,0.9,0.4,0.6,1.1l-3.4,10.7c-0.2,0.5-0.6,1-1.1,1h-0.6c-0.2,0-0.2,0-0.2,0.2l-0.1,0.5c0,0.1,0,0.2,0.1,0.2
+	c0.3,0,1.1-0.1,2.6-0.1c1.8,0,2.8,0.1,3,0.1c0.1,0,0.2,0,0.3-0.2v-0.5c0-0.1,0-0.2-0.1-0.2h-0.9c-0.6,0-0.8-0.4-0.5-1.5L241.3,7.9z
+	 M243.4,1.2c0.3,0,0.5,0,0.9,0c2.1,0,2.7,1.4,2.7,2.3c0,1.5-1,2.7-2.1,3.2c-1.5,0.6-2.6,0.5-3.4,0.5L243.4,1.2z M261.7,0.6
+	c0-0.1,0-0.1-0.2-0.1h-0.3c-0.2,0-0.2,0-0.2,0.1c-0.1,0.4-0.2,0.7-0.3,0.7c-0.1,0-0.2,0-0.3-0.1c-0.3-0.3-1.4-1-2.5-1
+	c-2.8,0-4,2.2-4,3.8c0,2.2,1.1,3.3,2.4,4.8c0.9,1,2,1.8,2,3.2c0,1.2-0.9,2.3-2.3,2.3c-1.3,0-3-1.5-2.4-4.5c0-0.1,0-0.2-0.1-0.2
+	l-0.3-0.1c-0.1,0-0.2,0-0.2,0.1l-1.6,4.7c0,0.2,0,0.2,0.1,0.2l0.3,0.1c0.1,0,0.2,0,0.2-0.1c0.2-0.3,0.4-0.6,0.5-0.8
+	c0.1-0.1,0.3-0.2,0.6,0c0.7,0.8,1.7,1.6,3,1.6c2.2,0,4.2-1.5,4.2-4.2c0-2.4-1.4-3.6-2.4-4.6S256,4.8,256,3.3c0-0.9,0.7-2.1,1.9-2.1
+	c2.2,0,2.4,2.6,2.3,3.4c0,0.1,0,0.2,0.2,0.2h0.4c0.1,0,0.1,0,0.2-0.1L261.7,0.6z M263.5,12.5c-0.3,1.1-0.4,1.5-1.7,1.5H261
+	c-0.1,0-0.2,0-0.2,0.2l-0.1,0.5c0,0.1,0,0.2,0.2,0.2c0.3,0,1.4-0.1,3.2-0.1c2.2,0,3.2,0.1,3.4,0.1c0.2,0,0.2,0,0.3-0.2v-0.4
+	c0-0.1,0-0.2-0.1-0.2h-0.8c-0.9,0-1.2-0.4-0.9-1.5l2.7-9.9c0.3-1.2,0.8-1.4,1.7-1.4h0.6c0.2,0,0.2-0.1,0.2-0.2l0.1-0.4
+	c0-0.2,0-0.3-0.3-0.3s-1.2,0.1-3,0.1c-1.7,0-2.9-0.1-3.1-0.1s-0.3,0-0.3,0.1l-0.1,0.6c0,0.1,0,0.2,0.2,0.2h1c0.6,0,0.9,0.3,0.6,1.4
+	L263.5,12.5z M276.9,0.5c-2.2,0-3.3-0.2-3.7-0.3C273,0.1,272.9,0,272.9,0c-0.1,0-0.2,0.1-0.2,0.2c0,0.1-1.4,3.1-1.6,3.6
+	c0,0.1,0,0.2,0,0.2l0.3,0.2c0.1,0,0.2,0,0.3-0.1c0.5-0.6,1.6-1.8,2.4-2.4c0.5-0.4,1.4-0.5,3.4-0.5h0.6l-3.3,10.6
+	c-0.5,1.6-0.9,2.2-2.1,2.2h-0.6c-0.2,0-0.2,0-0.3,0.2v0.5c0,0.1,0,0.2,0.2,0.2s1.4-0.1,3.5-0.1c2,0,2.9,0.1,3.2,0.1
+	c0.2,0,0.2-0.1,0.3-0.2l0.1-0.4c0-0.1,0-0.2-0.1-0.2h-0.9c-1.1,0-1.3-0.5-0.9-1.8l3.4-10.9h0.4c1,0,2.5,0.2,3,0.6
+	c0.3,0.6,0.7,1.9,0.9,2.6c0.1,0.3,0.2,0.3,0.3,0.3l0.3-0.1c0.1,0,0.2-0.1,0.2-0.2c0-0.9,0.2-4,0.2-4.3c0-0.1-0.1-0.2-0.2-0.2
+	s-0.1,0-0.2,0.1c-0.4,0.2-1.2,0.4-3.1,0.4h-5.5V0.5z M292.6,10.5c0.2-0.9,0.4-1.4,0.7-1.8c0.3-0.5,4.2-6,4.5-6.4
+	c0.4-0.6,0.9-0.9,1.6-0.9h0.4c0.1,0,0.2,0,0.2-0.2l0.1-0.4c0-0.1,0-0.2-0.2-0.2c-0.3,0-0.9,0.1-2.3,0.1c-1.2,0-2-0.1-2.3-0.1
+	c-0.2,0-0.3,0-0.3,0.2v0.5c0,0.1,0,0.2,0.1,0.2h0.5c0.7,0,1,0.3,0.7,1.1c-0.2,0.6-3.3,5.1-3.6,5.6c-0.2,0.3-0.3,0.3-0.4,0l-1.7-5.8
+	c-0.1-0.4-0.1-0.9,0.6-0.9h0.6c0.1,0,0.2,0,0.2-0.2V0.8c0-0.1,0-0.2-0.2-0.2c-0.3,0-1,0.1-2.8,0.1c-1.7,0-2.3-0.1-2.6-0.1
+	c-0.1,0-0.2,0-0.2,0.2l-0.1,0.3c0,0.1,0,0.2,0.2,0.2h0.5c0.7,0,1.2,0.3,1.3,0.8l2.2,6.6c0.1,0.3,0.1,0.8,0,1.1l-0.7,3.2
+	c-0.1,0.6-0.4,1.1-1.4,1.1h-0.5c-0.2,0-0.2,0.1-0.2,0.2l-0.1,0.5c0,0.2,0,0.2,0.2,0.2c0.3,0,0.9-0.1,2.8-0.1c1.7,0,2.4,0.1,2.7,0.1
+	c0.2,0,0.2-0.1,0.2-0.2l0.1-0.5c0-0.1,0-0.2-0.2-0.2h-0.5c-0.7,0-1-0.1-0.8-1.2L292.6,10.5z M172.8,3.3c0,0-5.2,4.2-3.5,9.5
+	c0,0,1.2,3.8,5.9,2.2c0,0,1.3-0.6,2.1-1.4s0.7,0,0.9,0.5c0.2,0.3,0.6,1.4,2.1,1.3s2.7-1.8,2.3-2.3c-0.3-0.4-0.8,0.5-1.1,0.8
+	c-0.4,0.2-1.2,0.3-1.4-0.8c-0.2-1.1,2.3-7.6,2.3-7.6s0.7-1.9,1.6-3.3c0.5-0.8,1-0.9,1.5-1.1c1.5-0.4,0.6-0.9,0.1-0.9
+	c-0.4,0-2.4-0.3-3.2,0.8s-4.3,10.1-4.3,10.1s-1.6,3.3-4.7,2.3c-3.1-1-2-5.3-1.5-6.4c0.3-0.6,1.8-3.3,3.7-5.7
+	c1.3-1.6-0.1-0.8-1.6-0.9c-1.5-0.1-5.1-0.9-6.6,0.2c-1.7,1.3-2.2,3.4-0.7,4.4s2.4-0.8,1.8-1.5c-0.6-0.7-0.7,0-1.5-0.1
+	c-0.6-0.1-0.5-1.6,1-1.8s3.7,0.3,5,0.3C174.3,2,172.8,3.3,172.8,3.3z"/>
+</svg></a>
+
+
+</div><!-- f--field f--georgetown-logo -->
+      </div>
+
+      <div class="footer-menu">
+          
+    
+
+<div
+    class="cc--component-container cc--footer-menu  "
+
+  
+  
+  
+  
+  >
+
+    <div class="c--component c--footer-menu"
+        >
+
+        
+  <ul>
+          <li class="menu-item">
+        <a href="https://gradapply.georgetown.edu/apply/#_ga=2.21677308.696313303.1611239671-682498265.1576267401#new_tab">Apply Now</a>
+      </li>
+          <li class="menu-item">
+        <a href="https://mccourt.georgetown.edu/careers-with-impact/">Careers with Impact</a>
+      </li>
+          <li class="menu-item">
+        <a href="https://mccourt.georgetown.edu/about-us/">About Us</a>
+      </li>
+          <li class="menu-item">
+        <a href="https://mccourt.georgetown.edu/news/">News</a>
+      </li>
+          <li class="menu-item">
+        <a href="https://giving.georgetown.edu/what-to-support/schools-programs/mccourt-school-of-public-policy/">Giving</a>
+      </li>
+      </ul>
+
+
+    </div><!-- c--component c--footer-menu -->
+
+</div><!-- cc--component-container cc--footer-menu -->
+      </div>
+
+      <div class="address">
+          
+    
+
+<div
+    class="cc--component-container cc--footer-address  "
+
+  
+  
+  
+  
+  >
+
+    <div class="c--component c--footer-address"
+        >
+
+        
+      
+
+
+<div
+        class="f--field f--richtext"
+                >
+
+    
+    
+    <p>McCourt School of Public Policy<br />
+37th and O Streets, NW<br />
+Old North, Suite 100<br />
+Washington, DC 20057</p>
+<p>P. <a href="tel:+(202) 687-5932">202-687-5932</a></p>
+
+
+
+</div><!-- f--field f--richtext -->
+
+
+    </div><!-- c--component c--footer-address -->
+
+</div><!-- cc--component-container cc--footer-address -->
+      </div>
+    </div>
+
+    <div class="row">
+        
+    
+
+<div
+    class="cc--component-container cc--footer-terms-menu  "
+
+  
+  
+  
+  
+  >
+
+    <div class="c--component c--footer-terms-menu"
+        >
+
+        
+<ul>
+      <li class="menu-item">
+      <a href="https://www.georgetown.edu/privacy-policy/"> Privacy Policy</a>
+    </li>
+      <li class="menu-item">
+      <a href="https://www.georgetown.edu/copyright-information"> Copyright Information</a>
+    </li>
+      <li class="menu-item">
+      <a href="https://accessibility.georgetown.edu/"> Web Accessibility</a>
+    </li>
+  </ul>
+
+
+    </div><!-- c--component c--footer-terms-menu -->
+
+</div><!-- cc--component-container cc--footer-terms-menu -->
+      <div class="cc--footer-copyright">
+        <div class="c--footer-copyright">
+              
+
+
+<div
+        class="f--field f--richtext"
+                >
+
+    
+    
+    &copy; 2021 McCourt School of Public Policy
+
+
+</div><!-- f--field f--richtext -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    </div><!-- c--component c--footer -->
+
+</footer><!-- cc--component-container cc--footer -->
+
+          <div id="search-form" role="dialog" aria-expanded="false">
+              
+    
+
+<div
+    class="cc--component-container cc--search-form  "
+
+  
+  
+  
+  
+  >
+
+    <div class="c--component c--search-form"
+        >
+
+        
+  <div class="search-form-inner">
+
+    <form role="search" method="GET" action="https://search.uis.georgetown.edu">
+      <label for="search">Search Georgetown</label>
+      <div class="search-form-wrapper">
+        <input type="hidden" name="sitesearch" value="https://mccourt.georgetown.edu">
+          
+    
+
+<div class="fi--form-item fi--q ">
+    
+        <div class="search-input-wrapper">
+      <input
+        type="search"
+        name="q"
+        id="search"
+        autocomplete="off"
+        placeholder="Search the site"
+                    >
+    </div>
+
+</div>
+          
+    
+
+<div class="fi--form-item fi--form-item ">
+      <button
+    type="submit"
+    class="button " 
+    name="button">
+
+    Search
+
+  </button>
+</div>
+      </div>
+    </form>
+
+    <nav aria-label="Close Search button">
+      <button class="close">Close the Search Dialog</button>
+    </nav>
+
+  </div>
+
+
+    </div><!-- c--component c--search-form -->
+
+</div><!-- cc--component-container cc--search-form -->
+          </div>
+
+          
+<script type='text/javascript' src='https://mccourt.georgetown.edu/wp-content/themes/georgetown/pattern_lab/source/js/dist/gu-vendor.min.js?ver=1.0.322' id='gu-vendor-js'></script>
+<script type='text/javascript' id='gu-scripts-js-extra'>
+/* <![CDATA[ */
+var filter_params = {"ajax_url":"https:\/\/mccourt.georgetown.edu\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://mccourt.georgetown.edu/wp-content/themes/georgetown/pattern_lab/source/js/dist/gu-scripts.min.js?ver=1.0.322' id='gu-scripts-js'></script>
+<script type='text/javascript' src='https://mccourt.georgetown.edu/wp-content/themes/georgetown/pattern_lab/source/js/dist/gu-scripts-child.min.js' id='gu-scripts-child-js'></script>
+<script type='text/javascript' src='https://static.addtoany.com/menu/page.js?ver=1.0.322' id='addtoany-js'></script>
+<script type='text/javascript' src='https://mccourt.georgetown.edu/wp-content/plugins/page-links-to/dist/new-tab.js?ver=3.3.5' id='page-links-to-js'></script>
+<script type='text/javascript' src='https://mccourt.georgetown.edu/wp-includes/js/wp-embed.min.js?ver=5.8.1' id='wp-embed-js'></script>
+
+
+        
+      </div>
+
+    </div>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-becbe7a30c108bf2fa9","applicationID":"873559783","transactionName":"YVZTMhRUDEcDVEJZDVgccAUSXA1aTURfXgVaVg==","queueTime":0,"applicationTime":403,"atts":"TRFQRFxOH0k=","errorBeacon":"bam.nr-data.net","agent":""}
+
+var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }</script>
+
+</body>
 
 </html>
