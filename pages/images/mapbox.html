@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Animate the camera along a path</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js"></script>
+<style>
+body { margin: 0; padding: 0; }
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+ 
+<script src="https://izzy-youngs.com/pages/wolf-route.js"></script>
+<script src="https://unpkg.com/@turf/turf@6/turf.min.js"></script>
+<script>
+	mapboxgl.accessToken = 'pk.eyJ1IjoiaXp6eW91bmdzIiwiYSI6ImNrODI3MHgzbjBqZXkzaHBxdGpxZDh5dWYifQ.H95COOShNs0hOU2d8wuSdg';
+const map = new mapboxgl.Map({
+container: 'map',
+zoom: 13,
+center: [-111.06718, 57.205719],
+pitch: 65,
+bearing: -180,
+style: 'mapbox://styles/mapbox-map-design/ckhqrf2tz0dt119ny6azh975y',
+interactive: true
+});
+ 
+// `routes` comes from https://docs.mapbox.com/mapbox-gl-js/assets/routes.js,
+// which has properties that are in the shape of an array of arrays that correspond
+//  to the `coordinates` property of a GeoJSON linestring, for example:
+// [
+//   [6.56158, 46.05989],
+//   [6.56913, 46.05679],
+//   ...
+// ]
+// this is the path the camera will look at
+const targetRoute = routes.target;
+// this is the path the camera will move along
+const cameraRoute = routes.camera;
+ 
+// add terrain, sky, and line layers once the style has loaded
+map.on('load', () => {
+map.addSource('mapbox-dem', {
+'type': 'raster-dem',
+'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+'tileSize': 512,
+'maxzoom': 14
+});
+map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 2.5 });
+map.addLayer({
+'id': 'sky',
+'type': 'sky',
+'paint': {
+'sky-type': 'atmosphere',
+'sky-atmosphere-sun': [0.0, 90.0],
+'sky-atmosphere-sun-intensity': 15
+}
+});
+map.addSource('trace', {
+type: 'geojson',
+data: {
+'type': 'Feature',
+'properties': {},
+'geometry': {
+'type': 'LineString',
+'coordinates': targetRoute
+}
+}
+});
+map.addLayer({
+type: 'line',
+source: 'trace',
+id: 'line',
+paint: {
+'line-color': 'red',
+'line-width': 2,
+},
+layout: {
+'line-cap': 'round',
+'line-join': 'round'
+}
+});
+});
+ 
+// wait for the terrain and sky to load before starting animation
+map.on('load', () => {
+const animationDuration = 800000;
+const cameraAltitude = 4000;
+// get the overall distance of each route so we can interpolate along them
+const routeDistance = turf.lineDistance(turf.lineString(targetRoute));
+const cameraRouteDistance = turf.lineDistance(
+turf.lineString(cameraRoute)
+);
+ 
+let start;
+ 
+function frame(time) {
+if (!start) start = time;
+// phase determines how far through the animation we are
+const phase = (time - start) / animationDuration;
+ 
+// phase is normalized between 0 and 1
+// when the animation is finished, reset start to loop the animation
+if (phase > 1) {
+// wait 1.5 seconds before looping
+setTimeout(() => {
+start = 0.0;
+}, 1500);
+}
+ 
+// use the phase to get a point that is the appropriate distance along the route
+// this approach syncs the camera and route positions ensuring they move
+// at roughly equal rates even if they don't contain the same number of points
+const alongRoute = turf.along(
+turf.lineString(targetRoute),
+routeDistance * phase
+).geometry.coordinates;
+ 
+const alongCamera = turf.along(
+turf.lineString(cameraRoute),
+cameraRouteDistance * phase
+).geometry.coordinates;
+ 
+const camera = map.getFreeCameraOptions();
+ 
+// set the position and altitude of the camera
+camera.position = mapboxgl.MercatorCoordinate.fromLngLat(
+{
+lng: alongCamera[0],
+lat: alongCamera[1]
+},
+cameraAltitude
+);
+ 
+// tell the camera to look at a point along the route
+camera.lookAtPoint({
+lng: alongRoute[0],
+lat: alongRoute[1]
+});
+ 
+map.setFreeCameraOptions(camera);
+ 
+window.requestAnimationFrame(frame);
+}
+ 
+window.requestAnimationFrame(frame);
+});
+</script>
+ 
+</body>
+</html>
