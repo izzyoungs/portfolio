@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Animate the camera along a path</title>
+<title>Alberta Grey Wolf Migration</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 <link href="https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.css" rel="stylesheet">
 <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js"></script>
@@ -12,6 +12,7 @@ body { margin: 0; padding: 0; }
 </style>
 </head>
 <body>
+	<h3>Title</h3>
 <div id="map"></div>
  
 <script src="https://izzy-youngs.com/pages/wolf-route.js"></script>
@@ -20,10 +21,10 @@ body { margin: 0; padding: 0; }
 	mapboxgl.accessToken = 'pk.eyJ1IjoiaXp6eW91bmdzIiwiYSI6ImNrODI3MHgzbjBqZXkzaHBxdGpxZDh5dWYifQ.H95COOShNs0hOU2d8wuSdg';
 const map = new mapboxgl.Map({
 container: 'map',
-zoom: 13,
+zoom: 14,
 center: [-111.06718, 57.205719],
 pitch: 65,
-bearing: -180,
+bearing: 80,
 style: 'mapbox://styles/mapbox-map-design/ckhqrf2tz0dt119ny6azh975y',
 interactive: true
 });
@@ -76,7 +77,7 @@ source: 'trace',
 id: 'line',
 paint: {
 'line-color': 'red',
-'line-width': 2,
+'line-width': 5,
 },
 layout: {
 'line-cap': 'round',
