@@ -1,3 +1,3 @@
 # Portfolio Webpage
 
-This is the github repo for my portfolio website
+Please see my portfolio [here](https://izzyoungs.notion.site/)
